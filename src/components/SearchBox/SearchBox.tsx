@@ -9,7 +9,7 @@ const SearchBox = () => {
   return (
     <TextField
       id="outlined-basic"
-      label="Search"
+      // label="Search"
       variant="outlined"
       placeholder="Search for a Game..."
       InputProps={{

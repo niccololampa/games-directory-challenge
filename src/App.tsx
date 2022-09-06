@@ -1,12 +1,14 @@
 import React from "react"
 import "./App.css"
-import { NavigationBar, SearchBox } from "./components"
+
+import { NavigationBar, SearchBox, SelectDropDown } from "./components"
 
 function App() {
   return (
     <div className="App">
       <NavigationBar />
       <SearchBox />
+      <SelectDropDown category="genre" />
     </div>
   )
 }
