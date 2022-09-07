@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.css"
 
-import { NavigationBar, SearchBox, SelectDropDown } from "./components"
+import { NavigationBar, SearchBox, SelectDropDown, SwitchFilter } from "./components"
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <NavigationBar />
       <SearchBox />
       <SelectDropDown category="genre" />
+      <SwitchFilter />
     </div>
   )
 }
