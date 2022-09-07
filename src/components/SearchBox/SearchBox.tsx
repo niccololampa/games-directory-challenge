@@ -1,7 +1,6 @@
 import * as React from "react"
 import SearchIcon from "@mui/icons-material/Search"
-import { styled, alpha } from "@mui/material/styles"
-import InputBase from "@mui/material/InputBase"
+import { styled } from "@mui/material/styles"
 import TextField from "@mui/material/TextField"
 import InputAdornment from "@mui/material/InputAdornment"
 
