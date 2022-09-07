@@ -9,6 +9,7 @@ const baseColor = "#768085"
 const highlightColor = "#eeeea5"
 
 const StyledTextField = styled(TextField)({
+  minWidth: 400,
   "& .MuiInputBase-root": { color: baseColor },
   "& .MuiOutlinedInput-notchedOutline": { borderColor: baseColor },
   "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {

@@ -16,8 +16,7 @@ const SelectDropDown = ({ category }: { category: string }) => {
   const highlightColor = "#eeeea5"
 
   const StyledFormControl = styled(FormControl)({
-    m: 1,
-    minWidth: 120,
+    minWidth: 300,
     "& .MuiInputBase-root": { color: baseColor },
     "& .MuiSvgIcon-root": { color: baseColor },
     "& .MuiOutlinedInput-notchedOutline": { borderColor: baseColor },
@@ -31,7 +30,7 @@ const SelectDropDown = ({ category }: { category: string }) => {
 
   return (
     <div>
-      <StyledFormControl sx={{ m: 1, minWidth: 120 }}>
+      <StyledFormControl>
         <Select id="select-helper" value={itemSelected} onChange={handleChange} displayEmpty>
           <MenuItem value="">None</MenuItem>
         </Select>
