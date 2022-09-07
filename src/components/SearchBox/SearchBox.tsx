@@ -5,16 +5,30 @@ import InputBase from "@mui/material/InputBase"
 import TextField from "@mui/material/TextField"
 import InputAdornment from "@mui/material/InputAdornment"
 
+// FIXME:  these can be set up in themes page color
+const baseColor = "#768085"
+const highlightColor = "#eeeea5"
+
+const StyledTextField = styled(TextField)({
+  "& .MuiInputBase-root": { color: baseColor },
+  "& .MuiOutlinedInput-notchedOutline": { borderColor: baseColor },
+  "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+    borderColor: highlightColor,
+  },
+  "& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline": {
+    borderColor: highlightColor,
+  },
+})
+
 const SearchBox = () => {
   return (
-    <TextField
+    <StyledTextField
       id="outlined-basic"
-      // label="Search"
       variant="outlined"
       placeholder="Search for a Game..."
       InputProps={{
         startAdornment: (
-          <InputAdornment position="start">
+          <InputAdornment position="start" sx={{ color: baseColor }}>
             <SearchIcon />
           </InputAdornment>
         ),
