@@ -1,0 +1,15 @@
+.hr-border {
+  border: 0;
+  margin: 0px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #eed5a538,
+    #eed5a5,
+    #eed5a5,
+    #eed5a5,
+    #eed5a538,
+    transparent
+  );
+}
