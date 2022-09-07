@@ -11,9 +11,10 @@ import Avatar from "@mui/material/Avatar"
 import Button from "@mui/material/Button"
 import Tooltip from "@mui/material/Tooltip"
 import MenuItem from "@mui/material/MenuItem"
-import AdbIcon from "@mui/icons-material/Adb"
+import { Adb, Twitter, Facebook } from "@mui/icons-material"
 import HRBorder from "../HRBorder/HRBorder"
 import "./NavigationBar.css"
+import { ReactComponent as DiscordLogo } from "../../discord.svg"
 
 const pages = ["Games", "News", "Allies", "Badges", "WhitePaper"]
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
@@ -46,7 +47,7 @@ const NavigationBar = () => {
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+            <Adb sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
             <Typography
               variant="h6"
               noWrap
@@ -76,6 +77,7 @@ const NavigationBar = () => {
               >
                 <MenuIcon />
               </IconButton>
+
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorElNav}
@@ -101,7 +103,8 @@ const NavigationBar = () => {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+
+            <Adb sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
             <Typography
               variant="h5"
               noWrap
@@ -120,6 +123,7 @@ const NavigationBar = () => {
             >
               LOGO
             </Typography>
+
             <Box
               sx={{
                 flexGrow: 1,
@@ -136,6 +140,17 @@ const NavigationBar = () => {
                   {page}
                 </Button>
               ))}
+              {/* FIXME: provide color through file */}
+              <IconButton size="large" color="inherit">
+                <Twitter sx={{ color: "#eeeea5" }} />
+              </IconButton>
+              <IconButton size="large" color="inherit">
+                <Facebook sx={{ color: "#eeeea5" }} />
+              </IconButton>
+
+              <IconButton size="large" color="inherit">
+                <DiscordLogo fill="#eeeea5" />
+              </IconButton>
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
