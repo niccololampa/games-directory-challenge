@@ -1,5 +1,5 @@
-import * as React from "react"
-import { SocialMediaLinks } from "../../components"
+import React from "react"
+import { SocialMediaLinks, PageLinks } from "../../components"
 import AppBar from "@mui/material/AppBar"
 import Box from "@mui/material/Box"
 import Toolbar from "@mui/material/Toolbar"
@@ -131,15 +131,7 @@ const NavigationBar = () => {
                 justifyContent: "center",
               }}
             >
-              {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "#ffffff", display: "block" }}
-                >
-                  {page}
-                </Button>
-              ))}
+              <PageLinks pages={pages} handleCloseNavMenu={handleCloseNavMenu} />
               <SocialMediaLinks />
             </Box>
 
