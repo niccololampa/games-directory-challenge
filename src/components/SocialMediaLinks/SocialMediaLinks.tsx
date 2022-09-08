@@ -1,6 +1,6 @@
 import React from "react"
 import { ReactComponent as DiscordLogo } from "../../discord.svg"
-import { Adb, Twitter, Facebook } from "@mui/icons-material"
+import { Twitter, Facebook } from "@mui/icons-material"
 import IconButton from "@mui/material/IconButton"
 
 const SocialMediaLinks = () => {

@@ -1,8 +1,7 @@
 import React, { useState } from "react"
-import MenuItem from "@mui/material/MenuItem"
-import FormControl from "@mui/material/FormControl"
-import { styled } from "@mui/material/styles"
+import { MenuItem, FormControl } from "@mui/material"
 import Select, { SelectChangeEvent } from "@mui/material/Select"
+import { styled } from "@mui/material/styles"
 
 const SelectDropDown = ({ category }: { category: string }) => {
   const [itemSelected, setItemSelected] = useState("")
@@ -32,7 +31,7 @@ const SelectDropDown = ({ category }: { category: string }) => {
     <div>
       <StyledFormControl>
         <Select id="select-helper" value={itemSelected} onChange={handleChange} displayEmpty>
-          <MenuItem value="">None</MenuItem>
+          <MenuItem value="">{category}</MenuItem>
         </Select>
       </StyledFormControl>
     </div>
