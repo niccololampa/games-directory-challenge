@@ -14,10 +14,12 @@ import {
 } from "./components"
 
 function App() {
+  const pages = ["Games", "News", "Allies", "Badges", "WhitePaper"]
+
   return (
     <div className="App">
-      <NavigationBar />
-
+      <NavigationBar pages={pages} />
+      {/* FIXME: Use react-router for additional pages */}
       <Container maxWidth="xl" sx={{ marginTop: "80px" }}>
         <PageHeader1 title={"Game Directory"} />
         <div className="filterSection">
@@ -36,7 +38,7 @@ function App() {
         </div>
       </Container>
 
-      <MainFooter />
+      <MainFooter pages={pages} />
     </div>
   )
 }

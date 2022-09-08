@@ -9,17 +9,15 @@ import Menu from "@mui/material/Menu"
 import MenuIcon from "@mui/icons-material/Menu"
 import Container from "@mui/material/Container"
 import Avatar from "@mui/material/Avatar"
-import Button from "@mui/material/Button"
 import Tooltip from "@mui/material/Tooltip"
 import MenuItem from "@mui/material/MenuItem"
-import { Adb } from "@mui/icons-material"
 import HRBorder from "../HRBorder/HRBorder"
 import "./NavigationBar.css"
+import earnAllianceLogo from "../../earn-alliance-logo-sample.png"
 
-const pages = ["Games", "News", "Allies", "Badges", "WhitePaper"]
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
 
-const NavigationBar = () => {
+const NavigationBar = ({ pages }: { pages: string[] }) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null)
 
@@ -47,26 +45,19 @@ const NavigationBar = () => {
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Adb sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
+            <Box
+              component="img"
               sx={{
-                mr: 2,
+                height: 68,
+                width: 160,
+                padding: 3,
                 display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
               }}
-            >
-              LOGO
-            </Typography>
+              alt="Earn Allaince Logo"
+              src={earnAllianceLogo}
+            />
 
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -104,26 +95,24 @@ const NavigationBar = () => {
               </Menu>
             </Box>
 
-            <Adb sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href=""
+            <Container
               sx={{
-                mr: 2,
                 display: { xs: "flex", md: "none" },
                 flexGrow: 1,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
+                justifyContent: "center",
               }}
             >
-              LOGO
-            </Typography>
-
+              <Box
+                component="img"
+                sx={{
+                  height: 68,
+                  width: 160,
+                  padding: 3,
+                }}
+                alt="Earn Allaince Logo"
+                src={earnAllianceLogo}
+              />
+            </Container>
             <Box
               sx={{
                 flexGrow: 1,
