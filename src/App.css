@@ -3,10 +3,6 @@ body {
   color: #ffffff;
 }
 
-.App {
-  text-align: center;
-}
-
 .filterSection {
   display: flex;
   align-items: center;

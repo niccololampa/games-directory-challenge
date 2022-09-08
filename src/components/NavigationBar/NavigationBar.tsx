@@ -1,4 +1,5 @@
 import * as React from "react"
+import { SocialMediaLinks } from "../../components"
 import AppBar from "@mui/material/AppBar"
 import Box from "@mui/material/Box"
 import Toolbar from "@mui/material/Toolbar"
@@ -11,10 +12,9 @@ import Avatar from "@mui/material/Avatar"
 import Button from "@mui/material/Button"
 import Tooltip from "@mui/material/Tooltip"
 import MenuItem from "@mui/material/MenuItem"
-import { Adb, Twitter, Facebook } from "@mui/icons-material"
+import { Adb } from "@mui/icons-material"
 import HRBorder from "../HRBorder/HRBorder"
 import "./NavigationBar.css"
-import { ReactComponent as DiscordLogo } from "../../discord.svg"
 
 const pages = ["Games", "News", "Allies", "Badges", "WhitePaper"]
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
@@ -135,22 +135,12 @@ const NavigationBar = () => {
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ my: 2, color: "#ffffff", display: "block" }}
                 >
                   {page}
                 </Button>
               ))}
-              {/* FIXME: provide color through file */}
-              <IconButton size="large" color="inherit">
-                <Twitter sx={{ color: "#eeeea5" }} />
-              </IconButton>
-              <IconButton size="large" color="inherit">
-                <Facebook sx={{ color: "#eeeea5" }} />
-              </IconButton>
-
-              <IconButton size="large" color="inherit">
-                <DiscordLogo fill="#eeeea5" />
-              </IconButton>
+              <SocialMediaLinks />
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>

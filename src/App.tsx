@@ -4,7 +4,14 @@ import CssBaseline from "@mui/material/CssBaseline"
 import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"
 
-import { NavigationBar, SearchBox, SelectDropDown, SwitchFilter, PageHeader1 } from "./components"
+import {
+  NavigationBar,
+  MainFooter,
+  SearchBox,
+  SelectDropDown,
+  SwitchFilter,
+  PageHeader1,
+} from "./components"
 
 function App() {
   return (
@@ -28,6 +35,8 @@ function App() {
           </div>
         </div>
       </Container>
+
+      <MainFooter />
     </div>
   )
 }
