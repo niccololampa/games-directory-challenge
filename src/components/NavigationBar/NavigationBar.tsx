@@ -43,7 +43,7 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
         className="app-bar"
         sx={{ backgroundColor: "transparent", boxShadow: "none" }}
       >
-        <Container maxWidth="xl">
+        <Container maxWidth={false}>
           <Toolbar disableGutters>
             <Box
               component="img"
