@@ -1,20 +1,19 @@
 import React from "react"
-import Box from "@mui/material/Box"
-import Button from "@mui/material/Button"
+import { Box, Button } from "@mui/material/"
 
 const PageLinks = ({
   pages,
-  handleCloseNavMenu,
+  handleLinkClick,
 }: {
   pages: string[]
-  handleCloseNavMenu: () => void
+  handleLinkClick: () => void
 }) => {
   return (
     <>
       {pages.map((page) => (
         <Button
           key={page}
-          onClick={handleCloseNavMenu}
+          onClick={handleLinkClick}
           sx={{ my: 2, color: "#ffffff", display: "block" }}
         >
           {page}

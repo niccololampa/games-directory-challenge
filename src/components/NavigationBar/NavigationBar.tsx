@@ -120,7 +120,7 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
                 justifyContent: "center",
               }}
             >
-              <PageLinks pages={pages} handleCloseNavMenu={handleCloseNavMenu} />
+              <PageLinks pages={pages} handleLinkClick={handleCloseNavMenu} />
               <SocialMediaLinks />
             </Box>
 
