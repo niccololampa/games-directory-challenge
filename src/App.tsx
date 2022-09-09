@@ -1,6 +1,7 @@
 import React from "react"
 import "./App.css"
 import { Container } from "@mui/material"
+import sampleGameImage from "./sample-game-image.png"
 
 import {
   NavigationBar,
@@ -9,6 +10,7 @@ import {
   SelectDropDown,
   SwitchFilter,
   PageHeader1,
+  GameCard,
 } from "./components"
 
 function App() {
@@ -34,6 +36,13 @@ function App() {
             <div className="live-games-text">Live Games</div>
           </div>
         </div>
+        <GameCard
+          color="#2e4857"
+          title="test"
+          subtitle="test"
+          image={sampleGameImage}
+          width={256}
+        />
       </Container>
 
       <MainFooter pages={pages} />
