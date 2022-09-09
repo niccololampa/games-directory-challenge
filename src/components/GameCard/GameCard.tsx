@@ -1,10 +1,21 @@
 import React from "react"
 import Color from "color"
-import { Grid, Typography, CardActionArea, Card, CardContent, CardMedia } from "@mui/material"
+import { Container, Typography, CardActionArea, Card, CardContent, CardMedia } from "@mui/material"
 import { styled } from "@mui/material/styles"
+import type { GameInfo } from "../../types"
 
 const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string | number }) => ({
-  borderRadius: 16,
+  margin: 10,
+  borderRadius: 0,
+  borderTop: "solid",
+  borderBottom: "solid",
+  borderRight: "solid",
+  borderWidth: 2,
+
+  borderImage:
+    "linear-gradient( 135deg, transparent, #eed5a5, #eed5a538, transparent, #eed5a5, #eed5a538   )",
+
+  borderImageSlice: 50,
   transition: "0.2s",
   width,
   "&:hover": {
@@ -12,9 +23,8 @@ const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string
   },
 }))
 
-const StyledCard = styled(Card)(({ color, width }: { color: string; width?: number | string }) => ({
-  width,
-  borderRadius: 16,
+const StyledCard = styled(Card)(({ color }: { color: string }) => ({
+  borderRadius: 0,
   boxShadow: "none",
   "&:hover": {
     boxShadow: `0 6px 12px 0 ${Color(color).rotate(-12).darken(0.2).fade(0.5)}`,
@@ -26,22 +36,6 @@ const StyledCardContent = styled(CardContent)(({ color }: { color: string }) => 
   padding: "1rem 1.5rem 1.5rem",
 }))
 
-const StyledTitle = styled(Typography)({
-  fontFamily: "Keania One",
-  fontSize: "2rem",
-  color: "#fff",
-  textTransform: "uppercase",
-})
-
-const StyledSubTitle = styled(Typography)({
-  fontFamily: "Montserrat",
-  color: "#fff",
-  opacity: 0.87,
-  marginTop: "2rem",
-  fontWeight: 500,
-  fontSize: 14,
-})
-
 const StyledCardMedia = styled(CardMedia)(
   ({ bgColor = "rgba(0, 0, 0, 0.08)" }: { bgColor?: string }) => ({
     width: "100%",
@@ -51,26 +45,65 @@ const StyledCardMedia = styled(CardMedia)(
   }),
 )
 
+const StyledGameName = styled(Typography)({
+  fontFamily: "Keania One",
+  fontSize: "20px",
+  fontWeight: "bold",
+  color: "#fff",
+})
+
+const StyledGenre = styled(Typography)({
+  fontFamily: "Montserrat",
+  color: "#eeeea5",
+  fontWeight: 500,
+  fontSize: 14,
+  marginLeft: 2,
+})
+
+const StyledDescription = styled(Typography)({
+  fontFamily: "Montserrat",
+  color: "#fff",
+  opacity: 0.87,
+  marginTop: "2rem",
+  fontWeight: 500,
+  fontSize: 14,
+})
+
+const StyledLive = styled(Typography)(({ live }: { live: boolean }) => {
+  return {
+    fontFamily: "Keania One",
+    color: live ? "#57d63d" : "#768085",
+    fontWeight: "bold",
+    fontSize: 14,
+  }
+})
+
 const GameCard = ({
   color,
-  image,
-  title,
-  subtitle,
   width,
+  gameInfo,
 }: {
   color: string
-  image: string
-  title: string
-  subtitle: string
+  gameInfo: GameInfo
   width?: number | string
 }) => {
+  const { gameName, image, live, description, genre } = gameInfo
   return (
     <StyledCardActionArea width={width}>
-      <StyledCard color={color} width={width}>
+      <StyledCard color={color}>
         <StyledCardMedia image={image} />
         <StyledCardContent color={color}>
-          <StyledTitle variant={"h2"}>{title}</StyledTitle>
-          <StyledSubTitle>{subtitle}</StyledSubTitle>
+          <StyledLive live={live}>{live ? "Live" : "Upcoming"}</StyledLive>
+          <StyledGameName>{gameName}</StyledGameName>
+          <Container sx={{ display: "flex" }} disableGutters>
+            {genre.map((genre, index) => {
+              return (
+                <StyledGenre key={index}>
+                  {genre + (index !== genre.length - 1 ? ", " : "")}
+                </StyledGenre>
+              )
+            })}
+          </Container>
         </StyledCardContent>
       </StyledCard>
     </StyledCardActionArea>

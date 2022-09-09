@@ -2,6 +2,8 @@ import React from "react"
 import "./App.css"
 import { Container } from "@mui/material"
 import sampleGameImage from "./sample-game-image.png"
+import jsonData from "./sample-data.json"
+import type { GameInfo } from "./types"
 
 import {
   NavigationBar,
@@ -12,6 +14,8 @@ import {
   PageHeader1,
   GameCard,
 } from "./components"
+
+const data: GameInfo[] = jsonData as GameInfo[]
 
 function App() {
   const pages = ["Games", "News", "Allies", "Badges", "WhitePaper"]
@@ -36,15 +40,13 @@ function App() {
             <div className="live-games-text">Live Games</div>
           </div>
         </div>
-        <GameCard
-          color="#2e4857"
-          title="test"
-          subtitle="test"
-          image={sampleGameImage}
-          width={256}
-        />
-      </Container>
 
+        <Container sx={{ display: "flex" }} disableGutters>
+          {data.map((game, index) => (
+            <GameCard key={index} gameInfo={game} color="#2e4857" width={256} />
+          ))}
+        </Container>
+      </Container>
       <MainFooter pages={pages} />
     </div>
   )

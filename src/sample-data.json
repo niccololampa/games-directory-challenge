@@ -1,0 +1,23 @@
+[
+  {
+    "live": true,
+    "gameName": "Axie Infinity",
+    "description": "Let's have fun",
+    "genre": ["Strategy", "Action", "FPS"],
+    "image": "sample-game-image.png"
+  },
+  {
+    "live": true,
+    "gameName": "Axie Infinity",
+    "description": "Let's have fun",
+    "genre": ["Strategy", "Action", "FPS"],
+    "image": "sample-game-image.png"
+  },
+  {
+    "live": false,
+    "gameName": "Axie Infinity",
+    "description": "Let's have fun",
+    "genre": ["Strategy", "Action", "FPS"],
+    "image": "sample-game-image.png"
+  }
+]
