@@ -87,7 +87,7 @@ const GameCard = ({
   gameInfo: GameInfo
   width?: number | string
 }) => {
-  const { gameName, image, live, description, genre } = gameInfo
+  const { gameName, image, live, description, genres } = gameInfo
   return (
     <StyledCardActionArea width={width}>
       <StyledCard color={color}>
@@ -96,7 +96,7 @@ const GameCard = ({
           <StyledLive live={live}>{live ? "Live" : "Upcoming"}</StyledLive>
           <StyledGameName>{gameName}</StyledGameName>
           <Container sx={{ display: "flex" }} disableGutters>
-            {genre.map((genre, index) => {
+            {genres.map((genre, index) => {
               return (
                 <StyledGenre key={index}>
                   {genre + (index !== genre.length - 1 ? ", " : "")}
