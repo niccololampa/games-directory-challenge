@@ -5,3 +5,9 @@ export interface GameInfo {
   genre: string[]
   image: string
 }
+
+export interface GameFilter {
+  search: string
+  genre: string
+  showLive: boolean
+}

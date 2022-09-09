@@ -20,11 +20,19 @@ const StyledTextField = styled(TextField)({
   },
 })
 
-const SearchBox = () => {
+const SearchBox = ({
+  value,
+  onChange,
+}: {
+  value: string
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+}) => {
   return (
     <StyledTextField
       id="outlined-basic"
       variant="outlined"
+      onChange={onChange}
+      value={value}
       placeholder="Search for a Game..."
       InputProps={{
         startAdornment: (

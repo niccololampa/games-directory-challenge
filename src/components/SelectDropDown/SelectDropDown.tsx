@@ -3,13 +3,15 @@ import { MenuItem, FormControl } from "@mui/material"
 import Select, { SelectChangeEvent } from "@mui/material/Select"
 import { styled } from "@mui/material/styles"
 
-const SelectDropDown = ({ category }: { category: string }) => {
-  const [itemSelected, setItemSelected] = useState("")
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setItemSelected(event.target.value)
-  }
-
+const SelectDropDown = ({
+  options,
+  selected,
+  onChange,
+}: {
+  options: string[]
+  selected: string
+  onChange: (event: SelectChangeEvent) => void
+}) => {
   // FIXME:  these can be set up in themes page color
   const baseColor = "#768085"
   const highlightColor = "#eeeea5"
@@ -30,8 +32,12 @@ const SelectDropDown = ({ category }: { category: string }) => {
   return (
     <div>
       <StyledFormControl>
-        <Select id="select-helper" value={itemSelected} onChange={handleChange} displayEmpty>
-          <MenuItem value="">{category}</MenuItem>
+        <Select id="select-dropdown" value={selected} onChange={onChange} displayEmpty>
+          {options.map((option, index) => (
+            <MenuItem value={option} key={index}>
+              {option}
+            </MenuItem>
+          ))}
         </Select>
       </StyledFormControl>
     </div>
