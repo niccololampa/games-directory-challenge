@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import { styled } from "@mui/material/styles"
 import { Backdrop, Box, Modal, Fade, Typography } from "@mui/material/"
-import { ColoredButton } from "../../components"
+import { ColoredButton, LiveGameInfoText, GameGenreText } from "../../components"
+import type { GameInfo } from "../../types"
 
 const modalStyle = {
   position: "absolute",
@@ -16,7 +17,17 @@ const modalStyle = {
   p: 4,
 }
 
-const GameModal = ({ visible, handleClose }: { visible: boolean; handleClose: () => void }) => {
+const GameModal = ({
+  visible,
+  gameInfo,
+  handleClose,
+}: {
+  visible: boolean
+  gameInfo: GameInfo
+  handleClose: () => void
+}) => {
+  const { gameName, image, live, description, genres } = gameInfo
+
   return (
     <>
       <Modal
@@ -36,6 +47,10 @@ const GameModal = ({ visible, handleClose }: { visible: boolean; handleClose: ()
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               Test Modal
             </Typography>
+            <LiveGameInfoText live={live} />
+            {genres.map((genre, index) => (
+              <GameGenreText key={index} genre={genre} />
+            ))}
             <ColoredButton text="Learn More" />
           </Box>
         </Fade>

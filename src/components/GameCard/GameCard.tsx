@@ -2,7 +2,8 @@ import React, { useState } from "react"
 import Color from "color"
 import { Container, Typography, CardActionArea, Card, CardContent, CardMedia } from "@mui/material"
 import { styled } from "@mui/material/styles"
-import GameModal from "../../components/GameModal/GameModal"
+
+import { GameModal, LiveGameInfoText, GameGenreText } from "../../components"
 import type { GameInfo } from "../../types"
 
 const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string | number }) => ({
@@ -53,14 +54,6 @@ const StyledGameName = styled(Typography)({
   color: "#fff",
 })
 
-const StyledGenre = styled(Typography)({
-  fontFamily: "Montserrat",
-  color: "#eeeea5",
-  fontWeight: 500,
-  fontSize: 14,
-  marginLeft: 2,
-})
-
 const StyledDescription = styled(Typography)({
   fontFamily: "Montserrat",
   color: "#fff",
@@ -68,15 +61,6 @@ const StyledDescription = styled(Typography)({
   marginTop: "2rem",
   fontWeight: 500,
   fontSize: 14,
-})
-
-const StyledLive = styled(Typography)(({ live }: { live: boolean }) => {
-  return {
-    fontFamily: "Keania One",
-    color: live ? "#57d63d" : "#768085",
-    fontWeight: "bold",
-    fontSize: 14,
-  }
 })
 
 const GameCard = ({
@@ -99,28 +83,26 @@ const GameCard = ({
     setModalVisible(false)
   }
 
+  // (index !== genre.length - 1 ? ", " : "")}
+
   return (
     <>
       <StyledCardActionArea width={width} onClick={handleCardClick}>
         <StyledCard color={color}>
           <StyledCardMedia image={image} />
           <StyledCardContent color={color}>
-            <StyledLive live={live}>{live ? "Live" : "Upcoming"}</StyledLive>
+            <LiveGameInfoText live={live} />
             <StyledGameName>{gameName}</StyledGameName>
             <Container sx={{ display: "flex" }} disableGutters>
-              {genres.map((genre, index) => {
-                return (
-                  <StyledGenre key={index}>
-                    {genre + (index !== genre.length - 1 ? ", " : "")}
-                  </StyledGenre>
-                )
-              })}
+              {genres.map((genre, index) => (
+                <GameGenreText key={index} genre={genre} />
+              ))}
             </Container>
           </StyledCardContent>
         </StyledCard>
       </StyledCardActionArea>
 
-      <GameModal visible={modalVisible} handleClose={handleModalClose} />
+      <GameModal visible={modalVisible} gameInfo={gameInfo} handleClose={handleModalClose} />
     </>
   )
 }
