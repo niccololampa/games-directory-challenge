@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import Color from "color"
 import { Container, Typography, CardActionArea, Card, CardContent, CardMedia } from "@mui/material"
 import { styled } from "@mui/material/styles"
+import GameModal from "../../components/GameModal/GameModal"
 import type { GameInfo } from "../../types"
 
 const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string | number }) => ({
@@ -88,25 +89,39 @@ const GameCard = ({
   width?: number | string
 }) => {
   const { gameName, image, live, description, genres } = gameInfo
+  const [modalVisible, setModalVisible] = useState(false)
+
+  const handleCardClick = () => {
+    setModalVisible(true)
+  }
+
+  const handleModalClose = () => {
+    setModalVisible(false)
+  }
+
   return (
-    <StyledCardActionArea width={width}>
-      <StyledCard color={color}>
-        <StyledCardMedia image={image} />
-        <StyledCardContent color={color}>
-          <StyledLive live={live}>{live ? "Live" : "Upcoming"}</StyledLive>
-          <StyledGameName>{gameName}</StyledGameName>
-          <Container sx={{ display: "flex" }} disableGutters>
-            {genres.map((genre, index) => {
-              return (
-                <StyledGenre key={index}>
-                  {genre + (index !== genre.length - 1 ? ", " : "")}
-                </StyledGenre>
-              )
-            })}
-          </Container>
-        </StyledCardContent>
-      </StyledCard>
-    </StyledCardActionArea>
+    <>
+      <StyledCardActionArea width={width} onClick={handleCardClick}>
+        <StyledCard color={color}>
+          <StyledCardMedia image={image} />
+          <StyledCardContent color={color}>
+            <StyledLive live={live}>{live ? "Live" : "Upcoming"}</StyledLive>
+            <StyledGameName>{gameName}</StyledGameName>
+            <Container sx={{ display: "flex" }} disableGutters>
+              {genres.map((genre, index) => {
+                return (
+                  <StyledGenre key={index}>
+                    {genre + (index !== genre.length - 1 ? ", " : "")}
+                  </StyledGenre>
+                )
+              })}
+            </Container>
+          </StyledCardContent>
+        </StyledCard>
+      </StyledCardActionArea>
+
+      <GameModal visible={modalVisible} handleClose={handleModalClose} />
+    </>
   )
 }
 
