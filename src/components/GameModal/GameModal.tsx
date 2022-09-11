@@ -29,11 +29,17 @@ const modalStyle = {
   p: 4,
 }
 
-const StyledSlideShowBox = styled(Box)({ gridArea: "1 / 1 / 1 / 3" })
+const StyledSlideShowBox = styled(Box)({
+  gridArea: "1 / 1 / 1 / 3",
+
+  backgroundColor: "#3f3f3f",
+  borderRadius: "5%",
+})
 
 const StyledVideoBox = styled(Box)(({ backgroundImage }: { backgroundImage: string }) => ({
   gridArea: "2 / 1 / 3 / 2",
   backgroundImage: `url(${backgroundImage})`,
+  backgroundColor: "#3f3f3f",
   borderRadius: "5%",
   border: "5px",
   display: "flex",
@@ -49,7 +55,7 @@ const StyledPlayTrailerText = styled(Typography)({
   fontWeight: "bold",
 })
 
-const StyledInfoBox = styled(Box)({ gridArea: "2 / 2 / 3 / 3" })
+const StyledInfoBox = styled(Box)({ gridArea: "2 / 2 / 3 / 2" })
 const StyledLearnMoreBox = styled(Box)({ gridArea: "3 / 1 / 3 / 3" })
 
 const StyledLiveGenreBox = styled(Box)({
