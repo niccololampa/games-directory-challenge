@@ -25,5 +25,70 @@
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
     "os": ["mac", "windows"]
+  },
+
+  {
+    "live": false,
+    "gameName": "Counter Strike",
+    "description": "Let's have fun",
+    "genres": ["FPS"],
+    "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
+    "os": ["mac", "windows"]
+  },
+  {
+    "live": true,
+    "gameName": "Axie Infinity",
+    "description": "Let's have fun. klajlfjlaskf .kfjlajflasjfjslfjlsfjlsjfl. kafljlafjskajflsdj . klsdlfjslkfjlsfjlsdjfskjflsjflsjflskdj . jlsdfjlsfjlsfjlfjlafj",
+    "genres": ["Strategy", "Action", "FPS"],
+    "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
+    "os": ["mac", "windows"]
+  },
+  {
+    "live": false,
+    "gameName": "Battle Realms",
+    "description": "Let's have fun",
+    "genres": ["Strategy"],
+    "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
+    "os": ["mac", "windows"]
+  },
+
+  {
+    "live": false,
+    "gameName": "Counter Strike",
+    "description": "Let's have fun",
+    "genres": ["FPS"],
+    "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
+    "os": ["mac", "windows"]
+  },
+  {
+    "live": true,
+    "gameName": "Axie Infinity",
+    "description": "Let's have fun. klajlfjlaskf .kfjlajflasjfjslfjlsfjlsjfl. kafljlafjskajflsdj . klsdlfjslkfjlsfjlsdjfskjflsjflsjflskdj . jlsdfjlsfjlsfjlfjlafj",
+    "genres": ["Strategy", "Action", "FPS"],
+    "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
+    "os": ["mac", "windows"]
+  },
+  {
+    "live": false,
+    "gameName": "Battle Realms",
+    "description": "Let's have fun",
+    "genres": ["Strategy"],
+    "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
+    "os": ["mac", "windows"]
+  },
+  {
+    "live": false,
+    "gameName": "Battle Realms",
+    "description": "Let's have fun",
+    "genres": ["Strategy"],
+    "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
+    "os": ["mac", "windows"]
   }
 ]

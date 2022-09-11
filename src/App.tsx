@@ -93,7 +93,7 @@ function App() {
         </div>
       </Container>
 
-      <Container maxWidth="xl" sx={{ display: "flex" }}>
+      <Container maxWidth="xl" sx={{ display: "flex", flexWrap: "wrap" }}>
         {gamesDisplayed.map((game, index) => (
           <GameCard key={index} gameInfo={game} color="#2e4857" width={256} />
         ))}
