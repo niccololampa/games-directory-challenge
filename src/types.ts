@@ -4,6 +4,7 @@ export interface GameInfo {
   description: string
   genres: string[]
   image: string
+  os: string[]
 }
 
 export interface GameFilter {
