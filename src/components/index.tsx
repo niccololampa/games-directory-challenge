@@ -9,3 +9,4 @@ export { default as SocialMediaLinks } from "./SocialMediaLinks/SocialMediaLinks
 export { default as PageLinks } from "./PageLinks/PageLinks"
 export { default as GameCard } from "./GameCard/GameCard"
 export { default as GameModal } from "./GameModal/GameModal"
+export { default as ColoredButton } from "./ColoredButton/ColoredButton"

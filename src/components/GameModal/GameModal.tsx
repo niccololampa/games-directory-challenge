@@ -1,12 +1,9 @@
 import React, { useState } from "react"
-import Backdrop from "@mui/material/Backdrop"
-import Box from "@mui/material/Box"
-import Modal from "@mui/material/Modal"
-import Fade from "@mui/material/Fade"
-import Button from "@mui/material/Button"
-import Typography from "@mui/material/Typography"
+import { styled } from "@mui/material/styles"
+import { Backdrop, Box, Modal, Fade, Typography } from "@mui/material/"
+import { ColoredButton } from "../../components"
 
-const style = {
+const modalStyle = {
   position: "absolute",
   top: "50%",
   left: "50%",
@@ -32,13 +29,14 @@ const GameModal = ({ visible, handleClose }: { visible: boolean; handleClose: ()
         }}
       >
         <Fade in={visible}>
-          <Box sx={style}>
+          <Box sx={modalStyle}>
             <Typography id="transition-modal-title" variant="h6" component="h2">
               Text in a modal
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               Test Modal
             </Typography>
+            <ColoredButton text="Learn More" />
           </Box>
         </Fade>
       </Modal>
