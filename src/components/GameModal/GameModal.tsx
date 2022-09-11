@@ -1,7 +1,13 @@
 import React, { useState } from "react"
 import { styled } from "@mui/material/styles"
 import { Backdrop, Box, Modal, Fade, Typography } from "@mui/material/"
-import { ColoredButton, LiveGameInfoText, GameGenreText, GameNameText } from "../../components"
+import {
+  ColoredButton,
+  LiveGameInfoText,
+  GameGenreText,
+  GameNameText,
+  GameDescText,
+} from "../../components"
 import type { GameInfo } from "../../types"
 
 const modalStyle = {
@@ -42,10 +48,11 @@ const GameModal = ({
         <Fade in={visible}>
           <Box sx={modalStyle}>
             <LiveGameInfoText live={live} />
-            <GameNameText gameName={gameName} />
             {genres.map((genre, index) => (
               <GameGenreText key={index} genre={genre} />
             ))}
+            <GameNameText gameName={gameName} />
+            <GameDescText description={description} />
             <ColoredButton text="Learn More" />
           </Box>
         </Fade>
