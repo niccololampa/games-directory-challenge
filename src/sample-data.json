@@ -5,6 +5,7 @@
     "description": "Let's have fun",
     "genres": ["FPS"],
     "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
     "os": ["mac", "windows"]
   },
   {
@@ -13,6 +14,7 @@
     "description": "Let's have fun. klajlfjlaskf .kfjlajflasjfjslfjlsfjlsjfl. kafljlafjskajflsdj . klsdlfjslkfjlsfjlsdjfskjflsjflsjflskdj . jlsdfjlsfjlsfjlfjlafj",
     "genres": ["Strategy", "Action", "FPS"],
     "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
     "os": ["mac", "windows"]
   },
   {
@@ -21,6 +23,7 @@
     "description": "Let's have fun",
     "genres": ["Strategy"],
     "image": "sample-game-image.png",
+    "videoThumb": "sample-video-thumbnail.jpg",
     "os": ["mac", "windows"]
   }
 ]
