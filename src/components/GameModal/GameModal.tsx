@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { styled } from "@mui/material/styles"
-import { Backdrop, Box, Modal, Fade, Typography } from "@mui/material/"
+import { Backdrop, Box, Modal, Fade, Typography, Container } from "@mui/material/"
 import {
   ColoredButton,
   LiveGameInfoText,
@@ -10,8 +10,13 @@ import {
 } from "../../components"
 import type { GameInfo } from "../../types"
 
+// can't use styled due to "position" key typing error.
 const modalStyle = {
   position: "absolute",
+  display: "grid",
+  gridTemplateRows: "60% 30% 10%",
+
+  gridTemplateColumns: "40% 60%",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
@@ -22,6 +27,16 @@ const modalStyle = {
   boxShadow: 24,
   p: 4,
 }
+
+const StyledSlideShowBox = styled(Box)({ gridArea: "1 / 1 / 1 / 3" })
+const StyledVideoBox = styled(Box)({ gridArea: "2 / 1 / 3 / 2" })
+const StyledInfoBox = styled(Box)({ gridArea: "2 / 2 / 3 / 3" })
+const StyledLearnMoreBox = styled(Box)({ gridArea: "3 / 1 / 3 / 3" })
+
+const StyledLiveGenreBox = styled(Box)({
+  display: "flex",
+  gap: "8px",
+})
 
 const GameModal = ({
   visible,
@@ -35,29 +50,35 @@ const GameModal = ({
   const { gameName, image, live, description, genres } = gameInfo
 
   return (
-    <>
-      <Modal
-        open={visible}
-        onClose={handleClose}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={visible}>
-          <Box sx={modalStyle}>
-            <LiveGameInfoText live={live} />
-            {genres.map((genre, index) => (
-              <GameGenreText key={index} genre={genre} />
-            ))}
+    <Modal
+      open={visible}
+      onClose={handleClose}
+      closeAfterTransition
+      BackdropComponent={Backdrop}
+      BackdropProps={{
+        timeout: 500,
+      }}
+    >
+      <Fade in={visible}>
+        <Box sx={modalStyle}>
+          <StyledSlideShowBox />
+          <StyledVideoBox />
+          <StyledInfoBox>
+            <StyledLiveGenreBox>
+              <LiveGameInfoText live={live} />
+              {genres.map((genre, index) => (
+                <GameGenreText key={index} genre={genre} fontWeight="bold" />
+              ))}
+            </StyledLiveGenreBox>
             <GameNameText gameName={gameName} />
             <GameDescText description={description} />
+          </StyledInfoBox>
+          <StyledLearnMoreBox>
             <ColoredButton text="Learn More" />
-          </Box>
-        </Fade>
-      </Modal>
-    </>
+          </StyledLearnMoreBox>
+        </Box>
+      </Fade>
+    </Modal>
   )
 }
 

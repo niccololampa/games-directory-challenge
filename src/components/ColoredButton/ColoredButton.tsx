@@ -10,6 +10,7 @@ const StyledButton = styled(Button)({
   color: "black",
   textTransform: "capitalize",
   width: "100%",
+  height: "40px",
   fontWeight: "bold",
   fontSize: "16px",
 })
