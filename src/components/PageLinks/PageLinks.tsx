@@ -14,7 +14,7 @@ const PageLinks = ({
         <Button
           key={page}
           onClick={handleLinkClick}
-          sx={{ my: 2, color: "#ffffff", display: "block" }}
+          sx={{ my: 2, color: "#ffffff", display: "block", textTransform: "capitalize" }}
         >
           {page}
         </Button>
