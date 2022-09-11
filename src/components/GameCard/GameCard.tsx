@@ -2,8 +2,7 @@ import React, { useState } from "react"
 import Color from "color"
 import { Container, Typography, CardActionArea, Card, CardContent, CardMedia } from "@mui/material"
 import { styled } from "@mui/material/styles"
-
-import { GameModal, LiveGameInfoText, GameGenreText } from "../../components"
+import { GameModal, LiveGameInfoText, GameGenreText, GameNameText } from "../../components"
 import type { GameInfo } from "../../types"
 
 const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string | number }) => ({
@@ -47,13 +46,6 @@ const StyledCardMedia = styled(CardMedia)(
   }),
 )
 
-const StyledGameName = styled(Typography)({
-  fontFamily: "Keania One",
-  fontSize: "20px",
-  fontWeight: "bold",
-  color: "#fff",
-})
-
 const StyledDescription = styled(Typography)({
   fontFamily: "Montserrat",
   color: "#fff",
@@ -92,7 +84,7 @@ const GameCard = ({
           <StyledCardMedia image={image} />
           <StyledCardContent color={color}>
             <LiveGameInfoText live={live} />
-            <StyledGameName>{gameName}</StyledGameName>
+            <GameNameText gameName={gameName} />
             <Container sx={{ display: "flex" }} disableGutters>
               {genres.map((genre, index) => (
                 <GameGenreText key={index} genre={genre} />
