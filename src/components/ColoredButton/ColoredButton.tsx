@@ -4,10 +4,14 @@ import { Button } from "@mui/material/"
 
 const StyledButton = styled(Button)({
   backgroundColor: "#eeeea5",
+  "&:hover": {
+    backgroundColor: "#f7f7d4",
+  },
   color: "black",
   textTransform: "capitalize",
   width: "100%",
   fontWeight: "bold",
+  fontSize: "16px",
 })
 
 const ColoredButton = ({ text }: { text: string }) => {
