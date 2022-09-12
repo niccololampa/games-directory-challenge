@@ -6,6 +6,7 @@ export interface GameInfo {
   image: string
   videoThumb: string
   os: OS[]
+  nfts: boolean
 }
 
 export interface GameFilter {

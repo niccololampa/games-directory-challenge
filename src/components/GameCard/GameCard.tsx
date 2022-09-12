@@ -16,6 +16,7 @@ import {
   GameGenreText,
   GameNameText,
   GameOSInfo,
+  NFTSDisplay,
 } from "../../components"
 import type { GameInfo } from "../../types"
 
@@ -85,7 +86,7 @@ const GameCard = ({
   gameInfo: GameInfo
   width?: number | string
 }) => {
-  const { gameName, image, live, description, genres, os } = gameInfo
+  const { gameName, image, live, description, genres, os, nfts } = gameInfo
   const [modalVisible, setModalVisible] = useState(false)
 
   const handleCardClick = () => {
@@ -104,6 +105,7 @@ const GameCard = ({
         <StyledCard color={color}>
           <StyledOSMediaBox>
             <GameOSInfo os={os} size={20} color="#fff" />
+            {nfts && <NFTSDisplay />}
             <StyledCardMedia image={image} />
           </StyledOSMediaBox>
           <StyledCardContent color={color}>

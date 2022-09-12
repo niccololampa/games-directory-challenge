@@ -6,7 +6,8 @@
     "genres": ["FPS"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["windows"]
+    "os": ["windows"],
+    "nfts": false
   },
   {
     "live": true,
@@ -15,7 +16,8 @@
     "genres": ["Strategy", "Action", "FPS"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["mac", "windows"],
+    "nfts": true
   },
   {
     "live": false,
@@ -24,7 +26,8 @@
     "genres": ["Strategy"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["mac", "windows"],
+    "nfts": false
   },
 
   {
@@ -34,7 +37,8 @@
     "genres": ["FPS"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["windows"]
+    "os": ["windows"],
+    "nfts": false
   },
   {
     "live": true,
@@ -43,7 +47,8 @@
     "genres": ["Strategy", "Action", "FPS"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["mac", "windows"],
+    "nfts": true
   },
   {
     "live": false,
@@ -52,7 +57,8 @@
     "genres": ["Strategy"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["mac", "windows"],
+    "nfts": false
   },
 
   {
@@ -62,7 +68,8 @@
     "genres": ["FPS"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["windows"]
+    "os": ["windows"],
+    "nfts": false
   },
   {
     "live": true,
@@ -71,7 +78,8 @@
     "genres": ["Strategy", "Action", "FPS"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["mac", "windows"],
+    "nfts": true
   },
   {
     "live": false,
@@ -80,7 +88,8 @@
     "genres": ["Strategy"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["mac", "windows"],
+    "nfts": false
   },
   {
     "live": false,
@@ -89,6 +98,7 @@
     "genres": ["Strategy"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["mac", "windows"],
+    "nfts": false
   }
 ]

@@ -10,6 +10,7 @@ import {
   GameDescText,
   ImageCarousel,
   GameOSInfo,
+  NFTSDisplay,
 } from "../../components"
 import type { GameInfo } from "../../types"
 
@@ -79,7 +80,7 @@ const GameModal = ({
   gameInfo: GameInfo
   handleClose: () => void
 }) => {
-  const { gameName, live, description, genres, videoThumb, os } = gameInfo
+  const { gameName, live, description, genres, videoThumb, os, nfts } = gameInfo
 
   return (
     <Modal
@@ -94,6 +95,7 @@ const GameModal = ({
       <Fade in={visible}>
         <Box sx={modalStyle}>
           <StyledSlideShowBox>
+            {nfts && <NFTSDisplay />}
             <GameOSInfo os={os} size={20} color="#fff" />
             <ImageCarousel />
           </StyledSlideShowBox>
