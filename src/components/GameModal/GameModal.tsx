@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { styled } from "@mui/material/styles"
 import PlayArrowIcon from "@mui/icons-material/PlayArrow"
-import { Backdrop, Box, Modal, Fade, Typography, Container } from "@mui/material/"
+import { Backdrop, Box, Modal, Fade, Typography } from "@mui/material/"
 import {
   ColoredButton,
   LiveGameInfoText,
@@ -17,7 +17,7 @@ const modalStyle = {
   position: "absolute",
   display: "grid",
   gridTemplateRows: "65% 25% 10%",
-  gridTemplateColumns: "40% 60%",
+  gridTemplateColumns: "40% 58%",
   gap: "10px 10px",
   top: "50%",
   left: "50%",
