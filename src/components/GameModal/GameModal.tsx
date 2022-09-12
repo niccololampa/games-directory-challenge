@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { styled } from "@mui/material/styles"
 import PlayArrowIcon from "@mui/icons-material/PlayArrow"
 import { Backdrop, Box, Modal, Fade, Typography } from "@mui/material/"
@@ -77,7 +77,7 @@ const GameModal = ({
   gameInfo: GameInfo
   handleClose: () => void
 }) => {
-  const { gameName, image, live, description, genres, videoThumb } = gameInfo
+  const { gameName, live, description, genres, videoThumb } = gameInfo
 
   return (
     <Modal

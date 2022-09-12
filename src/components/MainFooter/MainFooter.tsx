@@ -1,13 +1,12 @@
-import React, { useState } from "react"
+import React from "react"
 import { Box, Container, Typography } from "@mui/material"
 import { HRBorder, PageLinks, SocialMediaLinks } from "../../components"
 import earnAllianceLogo from "../../earn-alliance-logo-sample.png"
 
 const MainFooter = ({ pages }: { pages: string[] }) => {
   const footerPages = ["Privacy Policy", "Terms of Use", "Cookies Policy"]
-  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null)
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null)
+  const handleLinkClick = () => {
+    console.log("routing")
   }
 
   return (
@@ -20,7 +19,7 @@ const MainFooter = ({ pages }: { pages: string[] }) => {
         </Container>
 
         <Box sx={{ flexGrow: 1, display: "flex" }}>
-          <PageLinks pages={pages} handleLinkClick={handleCloseNavMenu} />
+          <PageLinks pages={pages} handleLinkClick={handleLinkClick} />
           <SocialMediaLinks />
         </Box>
       </Container>
@@ -43,7 +42,7 @@ const MainFooter = ({ pages }: { pages: string[] }) => {
         >
           All Rights Reserved 2022 Earn Alliance
         </Typography>
-        <PageLinks pages={footerPages} handleLinkClick={handleCloseNavMenu} />
+        <PageLinks pages={footerPages} handleLinkClick={handleLinkClick} />
       </Container>
     </Container>
   )

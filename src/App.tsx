@@ -11,7 +11,6 @@ import {
 } from "./components"
 import "./App.css"
 import { Container } from "@mui/material"
-import sampleGameImage from "./sample-game-image.png"
 import jsonData from "./sample-data.json"
 import type { GameInfo, GameFilter } from "./types"
 
@@ -98,7 +97,6 @@ function App() {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "center",
           alignContent: "flex-start",
         }}
       >
