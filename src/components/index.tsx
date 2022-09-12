@@ -14,3 +14,4 @@ export { default as LiveGameInfoText } from "./LiveGameInfoText/LiveGameInfoText
 export { default as GameGenreText } from "./GameGenreText/GameGenreText"
 export { default as GameNameText } from "./GameNameText/GameNameText"
 export { default as GameDescText } from "./GameDescText/GameDescText"
+export { default as ImageCarousel } from "./ImageCarousel/ImageCarousel"

@@ -11,7 +11,7 @@ const MainFooter = ({ pages }: { pages: string[] }) => {
   }
 
   return (
-    <Container maxWidth={false}>
+    <Container maxWidth={false} sx={{ marginTop: "80px" }}>
       <HRBorder />
 
       <Container sx={{ display: "flex", marginTop: 5 }} disableGutters maxWidth="xl">
