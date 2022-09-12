@@ -95,7 +95,12 @@ function App() {
 
       <Container
         maxWidth="xl"
-        sx={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignContent: "flex-start",
+        }}
       >
         {gamesDisplayed.map((game, index) => (
           <GameCard key={index} gameInfo={game} color="#2e4857" width={256} />
