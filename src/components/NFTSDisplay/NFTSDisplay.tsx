@@ -9,7 +9,7 @@ const StyledNFTSBox = styled(Box)({
   margin: "3px",
   zIndex: 1,
   borderRadius: "35%",
-  backgroundColor: "black",
+  backgroundColor: "#000000",
   padding: "3px 6px 1px 6px",
 })
 

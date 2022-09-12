@@ -1,7 +1,8 @@
 import React from "react"
 import { styled } from "@mui/material/styles"
 import PlayArrowIcon from "@mui/icons-material/PlayArrow"
-import { Backdrop, Box, Modal, Fade, Typography } from "@mui/material/"
+import CloseIcon from "@mui/icons-material/Close"
+import { Backdrop, Box, Modal, Fade, Typography, IconButton } from "@mui/material"
 import {
   ColoredButton,
   LiveGameInfoText,
@@ -71,6 +72,17 @@ const StyledPlayArrowIcon = styled(PlayArrowIcon)({
   fontSize: "80px",
 })
 
+const StyledCloseIconButton = styled(IconButton)({
+  position: "absolute",
+  top: -40,
+  right: -40,
+  color: "#fff",
+})
+
+const StyledCloseIcon = styled(CloseIcon)({
+  fontSize: "40px",
+})
+
 const GameModal = ({
   visible,
   gameInfo,
@@ -94,6 +106,9 @@ const GameModal = ({
     >
       <Fade in={visible}>
         <Box sx={modalStyle}>
+          <StyledCloseIconButton onClick={handleClose}>
+            <StyledCloseIcon />
+          </StyledCloseIconButton>
           <StyledSlideShowBox>
             {nfts && <NFTSDisplay />}
             <GameOSInfo os={os} size={20} color="#fff" />
