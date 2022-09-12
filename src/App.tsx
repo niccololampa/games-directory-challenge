@@ -7,7 +7,7 @@ import {
   SelectDropDown,
   SwitchFilter,
   PageHeader1,
-  GameCard,
+  GamesDisplayArea,
 } from "./components"
 import "./App.css"
 import { Container } from "@mui/material"
@@ -91,19 +91,7 @@ function App() {
           </div>
         </div>
       </Container>
-
-      <Container
-        maxWidth="xl"
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          alignContent: "flex-start",
-        }}
-      >
-        {gamesDisplayed.map((game, index) => (
-          <GameCard key={index} gameInfo={game} color="#2e4857" width={256} />
-        ))}
-      </Container>
+      <GamesDisplayArea gamesDisplayed={gamesDisplayed} />
       <MainFooter pages={pages} />
     </div>
   )
