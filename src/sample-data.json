@@ -6,7 +6,7 @@
     "genres": ["FPS"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["windows"]
   },
   {
     "live": true,
@@ -34,7 +34,7 @@
     "genres": ["FPS"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["windows"]
   },
   {
     "live": true,
@@ -62,7 +62,7 @@
     "genres": ["FPS"],
     "image": "sample-game-image.png",
     "videoThumb": "sample-video-thumbnail.jpg",
-    "os": ["mac", "windows"]
+    "os": ["windows"]
   },
   {
     "live": true,

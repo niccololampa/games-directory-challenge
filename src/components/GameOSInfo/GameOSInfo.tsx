@@ -25,7 +25,7 @@ const StyledGameOSContainer = styled(Container)({
   position: "absolute",
   top: 0,
   right: 0,
-  zIndex: 10000,
+  zIndex: 1,
 })
 
 const GameOSInfo = ({ os, size, color }: { os: OS[]; size: number; color: string }) => {

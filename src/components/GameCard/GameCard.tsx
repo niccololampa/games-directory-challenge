@@ -103,8 +103,8 @@ const GameCard = ({
       <StyledCardActionArea width={width} onClick={handleCardClick}>
         <StyledCard color={color}>
           <StyledOSMediaBox>
-            <StyledCardMedia image={image} />
             <GameOSInfo os={os} size={20} color="#fff" />
+            <StyledCardMedia image={image} />
           </StyledOSMediaBox>
           <StyledCardContent color={color}>
             <LiveGameInfoText live={live} />

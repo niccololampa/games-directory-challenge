@@ -9,6 +9,7 @@ import {
   GameNameText,
   GameDescText,
   ImageCarousel,
+  GameOSInfo,
 } from "../../components"
 import type { GameInfo } from "../../types"
 
@@ -28,11 +29,12 @@ const modalStyle = {
   borderRadius: "3%",
   boxShadow: 24,
   p: 4,
+  zIndex: 10,
 }
 
 const StyledSlideShowBox = styled(Box)({
   gridArea: "1 / 1 / 1 / 3",
-
+  position: "relative",
   backgroundColor: "#3f3f3f",
   borderRadius: "5%",
 })
@@ -77,7 +79,7 @@ const GameModal = ({
   gameInfo: GameInfo
   handleClose: () => void
 }) => {
-  const { gameName, live, description, genres, videoThumb } = gameInfo
+  const { gameName, live, description, genres, videoThumb, os } = gameInfo
 
   return (
     <Modal
@@ -92,6 +94,7 @@ const GameModal = ({
       <Fade in={visible}>
         <Box sx={modalStyle}>
           <StyledSlideShowBox>
+            <GameOSInfo os={os} size={20} color="#fff" />
             <ImageCarousel />
           </StyledSlideShowBox>
           <StyledVideoBox backgroundimage={videoThumb}>
