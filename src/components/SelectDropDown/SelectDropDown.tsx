@@ -32,7 +32,8 @@ const SelectDropDown = ({
   return (
     <div>
       <StyledFormControl>
-        <Select id="select-dropdown" value={selected} onChange={onChange} displayEmpty>
+        <Select id="select-dropdown" value={selected} onChange={onChange}>
+          <MenuItem value={""}>None</MenuItem>
           {options.map((option, index) => (
             <MenuItem value={option} key={index}>
               {option}
