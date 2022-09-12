@@ -1,8 +1,22 @@
 import React, { useState } from "react"
 import Color from "color"
-import { Container, Typography, CardActionArea, Card, CardContent, CardMedia } from "@mui/material"
+import {
+  Container,
+  Typography,
+  CardActionArea,
+  Card,
+  CardContent,
+  CardMedia,
+  Box,
+} from "@mui/material"
 import { styled } from "@mui/material/styles"
-import { GameModal, LiveGameInfoText, GameGenreText, GameNameText } from "../../components"
+import {
+  GameModal,
+  LiveGameInfoText,
+  GameGenreText,
+  GameNameText,
+  GameOSInfo,
+} from "../../components"
 import type { GameInfo } from "../../types"
 
 const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string | number }) => ({
@@ -37,12 +51,19 @@ const StyledCardContent = styled(CardContent)(({ color }: { color: string }) => 
   padding: "1rem 1.5rem 1.5rem",
 }))
 
+const StyledOSMediaBox = styled(Box)({
+  position: "relative",
+  height: "190px",
+})
+
 const StyledCardMedia = styled(CardMedia)(
   ({ bgColor = "rgba(0, 0, 0, 0.08)" }: { bgColor?: string }) => ({
     width: "100%",
-    height: 0,
     paddingBottom: "75%",
     backgroundColor: bgColor,
+    position: "absolute",
+    top: 0,
+    left: 0,
   }),
 )
 
@@ -64,7 +85,7 @@ const GameCard = ({
   gameInfo: GameInfo
   width?: number | string
 }) => {
-  const { gameName, image, live, description, genres } = gameInfo
+  const { gameName, image, live, description, genres, os } = gameInfo
   const [modalVisible, setModalVisible] = useState(false)
 
   const handleCardClick = () => {
@@ -81,7 +102,10 @@ const GameCard = ({
     <>
       <StyledCardActionArea width={width} onClick={handleCardClick}>
         <StyledCard color={color}>
-          <StyledCardMedia image={image} />
+          <StyledOSMediaBox>
+            <StyledCardMedia image={image} />
+            <GameOSInfo os={os} size={20} color="#fff" />
+          </StyledOSMediaBox>
           <StyledCardContent color={color}>
             <LiveGameInfoText live={live} />
             <GameNameText gameName={gameName} />

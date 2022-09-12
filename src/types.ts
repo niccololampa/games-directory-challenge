@@ -5,7 +5,7 @@ export interface GameInfo {
   genres: string[]
   image: string
   videoThumb: string
-  os: string[]
+  os: OS[]
 }
 
 export interface GameFilter {
@@ -13,3 +13,5 @@ export interface GameFilter {
   genre: string
   showLive: boolean
 }
+
+export type OS = "windows" | "mac" | "linux"
