@@ -8,6 +8,7 @@ import {
   GameGenreText,
   GameNameText,
   GameDescText,
+  ImageCarousel,
 } from "../../components"
 import type { GameInfo } from "../../types"
 
@@ -15,14 +16,14 @@ import type { GameInfo } from "../../types"
 const modalStyle = {
   position: "absolute",
   display: "grid",
-  gridTemplateRows: "60% 30% 10%",
+  gridTemplateRows: "65% 25% 10%",
   gridTemplateColumns: "40% 60%",
   gap: "10px 10px",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 500,
-  height: 450,
+  height: 490,
   bgcolor: "#262626",
   borderRadius: "3%",
   boxShadow: 24,
@@ -90,7 +91,9 @@ const GameModal = ({
     >
       <Fade in={visible}>
         <Box sx={modalStyle}>
-          <StyledSlideShowBox />
+          <StyledSlideShowBox>
+            <ImageCarousel />
+          </StyledSlideShowBox>
           <StyledVideoBox backgroundImage={videoThumb}>
             <StyledPlayArrowIcon />
             <StyledPlayTrailerText>Play Trailer</StyledPlayTrailerText>
