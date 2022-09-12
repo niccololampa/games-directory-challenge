@@ -37,9 +37,9 @@ const StyledSlideShowBox = styled(Box)({
   borderRadius: "5%",
 })
 
-const StyledVideoBox = styled(Box)(({ backgroundImage }: { backgroundImage: string }) => ({
+const StyledVideoBox = styled(Box)(({ backgroundimage }: { backgroundimage: string }) => ({
   gridArea: "2 / 1 / 3 / 2",
-  backgroundImage: `url(${backgroundImage})`,
+  backgroundImage: `url(${backgroundimage})`,
   backgroundColor: "#3f3f3f",
   borderRadius: "5%",
   border: "5px",
@@ -94,7 +94,7 @@ const GameModal = ({
           <StyledSlideShowBox>
             <ImageCarousel />
           </StyledSlideShowBox>
-          <StyledVideoBox backgroundImage={videoThumb}>
+          <StyledVideoBox backgroundimage={videoThumb}>
             <StyledPlayArrowIcon />
             <StyledPlayTrailerText>Play Trailer</StyledPlayTrailerText>
           </StyledVideoBox>
