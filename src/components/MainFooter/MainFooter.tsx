@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Container, Typography } from "@mui/material"
-import { HRBorder, PageLinks, SocialMediaLinks } from "../../components"
+import { HRBorder, PageLinks, SocialMediaLinks, EarnAllianceLogo } from "../../components"
 import earnAllianceLogo from "../../earn-alliance-logo-sample.png"
 
 const MainFooter = ({ pages }: { pages: string[] }) => {
@@ -15,7 +15,7 @@ const MainFooter = ({ pages }: { pages: string[] }) => {
 
       <Container sx={{ display: "flex", marginTop: 5 }} disableGutters maxWidth="xl">
         <Container disableGutters sx={{ flexGrow: 1 }}>
-          <Box component="img" alt="Earn Allaince Logo" src={earnAllianceLogo} />
+          <EarnAllianceLogo width="250px" height="139px" />
         </Container>
 
         <Box sx={{ flexGrow: 1, display: "flex" }}>

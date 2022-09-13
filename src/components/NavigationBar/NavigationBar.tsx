@@ -1,5 +1,5 @@
 import React from "react"
-import { SocialMediaLinks, PageLinks } from "../../components"
+import { SocialMediaLinks, PageLinks, EarnAllianceLogo } from "../../components"
 import AppBar from "@mui/material/AppBar"
 import Box from "@mui/material/Box"
 import Toolbar from "@mui/material/Toolbar"
@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip"
 import MenuItem from "@mui/material/MenuItem"
 import HRBorder from "../HRBorder/HRBorder"
 import "./NavigationBar.css"
-import earnAllianceLogo from "../../earn-alliance-logo-sample.png"
+import earnAllianceLogo from "../../earn-alliance-logo.png"
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
 
@@ -48,8 +48,8 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
             <Box
               component="img"
               sx={{
-                height: 68,
-                width: 160,
+                height: 84,
+                width: 150,
                 padding: 3,
                 display: { xs: "none", md: "flex" },
               }}
@@ -105,8 +105,8 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
               <Box
                 component="img"
                 sx={{
-                  height: 68,
-                  width: 160,
+                  height: 84,
+                  width: 150,
                   padding: 3,
                 }}
                 alt="Earn Allaince Logo"
