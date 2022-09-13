@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "live": false,
     "gameName": "Counter Strike",
     "description": "Let's have fun",
@@ -10,6 +11,7 @@
     "nfts": false
   },
   {
+    "id": "2",
     "live": true,
     "gameName": "Axie Infinity",
     "description": "Let's have fun. klajlfjlaskf .kfjlajflasjfjslfjlsfjlsjfl. kafljlafjskajflsdj . klsdlfjslkfjlsfjlsdjfskjflsjflsjflskdj . jlsdfjlsfjlsfjlfjlafj",
@@ -20,6 +22,7 @@
     "nfts": true
   },
   {
+    "id": "3",
     "live": false,
     "gameName": "Battle Realms",
     "description": "Let's have fun",
@@ -31,6 +34,7 @@
   },
 
   {
+    "id": "4",
     "live": false,
     "gameName": "Counter Strike",
     "description": "Let's have fun",
@@ -41,6 +45,7 @@
     "nfts": false
   },
   {
+    "id": "5",
     "live": true,
     "gameName": "Axie Infinity",
     "description": "Let's have fun. klajlfjlaskf .kfjlajflasjfjslfjlsfjlsjfl. kafljlafjskajflsdj . klsdlfjslkfjlsfjlsdjfskjflsjflsjflskdj . jlsdfjlsfjlsfjlfjlafj",
@@ -51,6 +56,7 @@
     "nfts": true
   },
   {
+    "id": "6",
     "live": false,
     "gameName": "Battle Realms",
     "description": "Let's have fun",
@@ -62,6 +68,7 @@
   },
 
   {
+    "id": "7",
     "live": false,
     "gameName": "Counter Strike",
     "description": "Let's have fun",
@@ -72,6 +79,7 @@
     "nfts": false
   },
   {
+    "id": "8",
     "live": true,
     "gameName": "Axie Infinity",
     "description": "Let's have fun. klajlfjlaskf .kfjlajflasjfjslfjlsfjlsjfl. kafljlafjskajflsdj . klsdlfjslkfjlsfjlsdjfskjflsjflsjflskdj . jlsdfjlsfjlsfjlfjlafj",
@@ -82,6 +90,7 @@
     "nfts": true
   },
   {
+    "id": "9",
     "live": false,
     "gameName": "Battle Realms",
     "description": "Let's have fun",
@@ -92,6 +101,7 @@
     "nfts": false
   },
   {
+    "id": "10",
     "live": false,
     "gameName": "Battle Realms",
     "description": "Let's have fun",

@@ -1,4 +1,5 @@
 export interface GameInfo {
+  id: string
   live: boolean
   gameName: string
   description: string

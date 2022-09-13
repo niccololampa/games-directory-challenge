@@ -15,8 +15,12 @@ const StyledButton = styled(Button)({
   fontSize: "16px",
 })
 
-const ColoredButton = ({ text }: { text: string }) => {
-  return <StyledButton variant="contained">{text}</StyledButton>
+const ColoredButton = ({ text, handleClick }: { text: string; handleClick: () => void }) => {
+  return (
+    <StyledButton variant="contained" onClick={handleClick}>
+      {text}
+    </StyledButton>
+  )
 }
 
 export default ColoredButton

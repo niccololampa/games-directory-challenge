@@ -1,4 +1,5 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 import { styled } from "@mui/material/styles"
 import PlayArrowIcon from "@mui/icons-material/PlayArrow"
 import CloseIcon from "@mui/icons-material/Close"
@@ -92,7 +93,12 @@ const GameModal = ({
   gameInfo: GameInfo
   handleClose: () => void
 }) => {
-  const { gameName, live, description, genres, videoThumb, os, nfts } = gameInfo
+  const { id, gameName, live, description, genres, videoThumb, os, nfts } = gameInfo
+  const navigate = useNavigate()
+
+  const handleLearnMore = () => {
+    navigate(id)
+  }
 
   return (
     <Modal
@@ -129,7 +135,7 @@ const GameModal = ({
             <GameDescText description={description} />
           </StyledInfoBox>
           <StyledLearnMoreBox>
-            <ColoredButton text="Learn More" />
+            <ColoredButton text="Learn More" handleClick={handleLearnMore} />
           </StyledLearnMoreBox>
         </Box>
       </Fade>

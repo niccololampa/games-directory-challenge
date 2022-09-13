@@ -7,7 +7,7 @@ const Games = () => {
   return (
     <Routes>
       <Route path="" element={<GamesList />} />
-      <Route path=":gameId" element={<GameProfile />} />
+      <Route path=":id" element={<GameProfile />} />
     </Routes>
   )
 }
