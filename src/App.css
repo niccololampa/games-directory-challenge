@@ -1,5 +1,7 @@
 body {
   background-color: #0c1e28;
+  background-image: url("earn-alliance-background.png");
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 
