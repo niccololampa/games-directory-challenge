@@ -93,7 +93,7 @@ const GameModal = ({
   gameInfo: GameInfo
   handleClose: () => void
 }) => {
-  const { id, gameName, live, description, genres, videoThumb, os, nfts } = gameInfo
+  const { id, gameName, live, shortDesc, genres, videoThumb, os, nfts } = gameInfo
   const navigate = useNavigate()
 
   const handleLearnMore = () => {
@@ -132,7 +132,7 @@ const GameModal = ({
               ))}
             </StyledLiveGenreBox>
             <GameNameText gameName={gameName} />
-            <GameDescText description={description} />
+            <GameDescText description={shortDesc} />
           </StyledInfoBox>
           <StyledLearnMoreBox>
             <ColoredButton text="Learn More" handleClick={handleLearnMore} />

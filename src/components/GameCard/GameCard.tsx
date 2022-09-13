@@ -86,7 +86,7 @@ const GameCard = ({
   gameInfo: GameInfo
   width?: number | string
 }) => {
-  const { gameName, image, live, description, genres, os, nfts } = gameInfo
+  const { gameName, image, live, shortDesc, genres, os, nfts } = gameInfo
   const [modalVisible, setModalVisible] = useState(false)
 
   const handleCardClick = () => {
