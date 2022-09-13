@@ -1,0 +1,27 @@
+.filterSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-input-label {
+  text-align: left;
+  font-size: 13px;
+  margin: 5px 0px;
+}
+
+.live-games-filter {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  /* margin-left: 50px; */
+}
+
+.live-games-text {
+  margin-left: 20px;
+  color: #eeeea5;
+  font-weight: bold;
+  font-size: 13px;
+}
