@@ -6,7 +6,7 @@ import { NavigationBar, MainFooter } from "./components"
 import "./App.css"
 
 function App() {
-  const pages = ["Games", "News", "Allies", "Badges", "WhitePaper"]
+  const pages = ["games", "news", "allies", "badges", "whitepaper"]
 
   return (
     <div className="App">

@@ -5,9 +5,6 @@ import earnAllianceLogo from "../../earn-alliance-logo-sample.png"
 
 const MainFooter = ({ pages }: { pages: string[] }) => {
   const footerPages = ["Privacy Policy", "Terms of Use", "Cookies Policy"]
-  const handleLinkClick = () => {
-    console.log("routing")
-  }
 
   return (
     <Container maxWidth={false} sx={{ marginTop: "80px" }}>
@@ -19,7 +16,7 @@ const MainFooter = ({ pages }: { pages: string[] }) => {
         </Container>
 
         <Box sx={{ flexGrow: 1, display: "flex" }}>
-          <PageLinks pages={pages} handleLinkClick={handleLinkClick} />
+          <PageLinks pages={pages} />
           <SocialMediaLinks />
         </Box>
       </Container>
@@ -42,7 +39,7 @@ const MainFooter = ({ pages }: { pages: string[] }) => {
         >
           All Rights Reserved 2022 Earn Alliance
         </Typography>
-        <PageLinks pages={footerPages} handleLinkClick={handleLinkClick} />
+        <PageLinks pages={footerPages} />
       </Container>
     </Container>
   )
