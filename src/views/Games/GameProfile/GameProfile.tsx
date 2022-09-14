@@ -28,7 +28,7 @@ const StyledImageBox = styled(Box)({
 
 const StyledProfileImageContainer = styled(Container)({
   position: "absolute",
-  top: "-19%",
+  top: "-200px",
 })
 
 const GameProfile = () => {
