@@ -19,3 +19,4 @@ export { default as GamesDisplayArea } from "./GamesDisplayArea/GamesDisplayArea
 export { default as GameOSInfo } from "./GameOSInfo/GameOSInfo"
 export { default as NFTSDisplay } from "./NFTSDisplay/NFTSDisplay"
 export { default as EarnAllianceLogo } from "./EarnAllianceLogo/EarnAllianceLogo"
+export { default as GameProfileInfoBox } from "./GameProfileInfoBox/GameProfileInfoBox"
