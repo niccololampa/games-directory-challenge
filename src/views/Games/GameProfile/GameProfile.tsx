@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
+import { styled } from "@mui/material/styles"
 import { useParams } from "react-router-dom"
-import { Container, Stack } from "@mui/material"
+import { Container, Box, Stack } from "@mui/material"
 import {
   PageHeader1,
   LiveGameInfoText,
@@ -9,6 +10,7 @@ import {
   HighlightBox,
   GameDescText,
   GameCoverPhoto,
+  GameProfileImage,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
 import type { GameInfo, GameFilter } from "../../../types"
@@ -18,6 +20,16 @@ const data: GameInfo[] = jsonData as GameInfo[]
 const getGameDetails = (id: string) => {
   return data.find((game) => game.id === id)
 }
+
+const StyledImageBox = styled(Box)({
+  backgroundColor: "#3f3f3f",
+  borderRadius: "5%",
+})
+
+const StyledProfileImageContainer = styled(Container)({
+  position: "absolute",
+  top: "-19%",
+})
 
 const GameProfile = () => {
   const { id } = useParams()
@@ -37,8 +49,13 @@ const GameProfile = () => {
 
   return (
     <div>
-      <GameCoverPhoto coverPhoto={gameDetails.coverPhoto} width="100%" height="400px" />
-      <Container maxWidth="xl" sx={{ marginTop: "80px" }}>
+      <StyledImageBox>
+        <GameCoverPhoto coverPhoto={gameDetails.coverPhoto} width="100%" height="400px" />
+      </StyledImageBox>
+      <Container maxWidth="xl" sx={{ marginTop: "100px", position: "relative" }}>
+        <StyledProfileImageContainer maxWidth="xl" disableGutters>
+          <GameProfileImage image={gameDetails.image} width="200px" height="200px" />
+        </StyledProfileImageContainer>
         <LiveGameInfoText live={gameDetails.live} />
         <PageHeader1 title={gameDetails.gameName} />
         <Stack direction="row" spacing={2} marginBottom={2}>

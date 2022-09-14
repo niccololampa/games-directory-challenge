@@ -1,5 +1,10 @@
 import React from "react"
 import { Container, Box } from "@mui/material"
+import { styled } from "@mui/material/styles"
+
+const StyledContainer = styled(Container)({
+  // position: "absolute",
+})
 
 const GameCoverPhoto = ({
   coverPhoto,
@@ -11,9 +16,9 @@ const GameCoverPhoto = ({
   height: string | number
 }) => {
   return (
-    <Container maxWidth={false} disableGutters>
+    <StyledContainer maxWidth={false} disableGutters>
       <Box component="img" alt="coverPhoto" src={coverPhoto} width={width} height={height} />
-    </Container>
+    </StyledContainer>
   )
 }
 

@@ -23,3 +23,4 @@ export { default as GameProfileInfoBox } from "./GameProfileInfoBox/GameProfileI
 export { default as GameTrailerPlayer } from "./GameTrailerPlayer/GameTrailerPlayer"
 export { default as HighlightBox } from "./HighlightBox/HighlightBox"
 export { default as GameCoverPhoto } from "./GameCoverPhoto/GameCoverPhoto"
+export { default as GameProfileImage } from "./GameProfileImage/GameProfileImage"
