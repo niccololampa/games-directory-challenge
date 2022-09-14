@@ -6,6 +6,7 @@ import {
   LiveGameInfoText,
   GameProfileInfoBox,
   GameTrailerPlayer,
+  HighlightBox,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
 import type { GameInfo, GameFilter } from "../../../types"
@@ -37,6 +38,9 @@ const GameProfile = () => {
       <Container maxWidth="xl" sx={{ marginTop: "80px" }}>
         <LiveGameInfoText live={gameDetails.live} />
         <PageHeader1 title={gameDetails.gameName} />
+        <Stack direction="row" spacing={2} marginBottom={2}>
+          <HighlightBox status={gameDetails.claimed} textPos="Claimed" textNeg="Unclaimed" />
+        </Stack>
         <Stack direction="row" spacing={2}>
           <GameProfileInfoBox label="publisher" value={gameDetails.publisher} />
           <GameProfileInfoBox label="Game Genre" values={gameDetails.genres} />
