@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { styled } from "@mui/material/styles"
 import { useParams } from "react-router-dom"
 import { Container, Box, Stack } from "@mui/material"
-import { Favorite, Group, Map as MapIcon, Support } from "@mui/icons-material"
+import { Favorite, Groups, Map as MapIcon, Support } from "@mui/icons-material"
 import {
   PageHeader1,
   LiveGameInfoText,
@@ -108,7 +108,7 @@ const GameProfile = () => {
             handleClick={() => {
               console.log("Group Clicked")
             }}
-            icon={Group}
+            icon={Groups}
             width="fit-content"
           />
 
