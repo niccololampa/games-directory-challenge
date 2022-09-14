@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { Container, Stack } from "@mui/material"
-import { PageHeader1, LiveGameInfoText, GameProfileInfoBox } from "../../../components"
+import {
+  PageHeader1,
+  LiveGameInfoText,
+  GameProfileInfoBox,
+  GameTrailerPlayer,
+} from "../../../components"
 import jsonData from "../../../sample-data.json"
 import type { GameInfo, GameFilter } from "../../../types"
 
@@ -37,6 +42,7 @@ const GameProfile = () => {
           <GameProfileInfoBox label="Game Genre" values={gameDetails.genres} />
           <GameProfileInfoBox label="protcol" value={gameDetails.protocol} />
         </Stack>
+        <GameTrailerPlayer url={gameDetails.trailerLink} />
       </Container>
     </div>
   )
