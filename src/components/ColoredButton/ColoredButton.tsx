@@ -1,6 +1,7 @@
 import React, { createElement, useState } from "react"
 import { styled } from "@mui/material/styles"
 import { Button, Typography } from "@mui/material/"
+import { SvgIconComponent } from "@mui/icons-material"
 
 const StyledButton = styled(Button)(({ width }: { width?: string | number }) => ({
   backgroundColor: "#eeeea5",
@@ -30,7 +31,7 @@ const ColoredButton = ({
   text: string
   handleClick: () => void
   width?: string | number
-  icon?: any
+  icon?: SvgIconComponent
 }) => {
   return (
     <StyledButton variant="contained" onClick={handleClick} width={width}>
