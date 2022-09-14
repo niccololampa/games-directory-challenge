@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { styled } from "@mui/material/styles"
 import { useParams } from "react-router-dom"
 import { Container, Box, Stack } from "@mui/material"
+import { Favorite, Group, Map as MapIcon, Support } from "@mui/icons-material"
 import {
   PageHeader1,
   LiveGameInfoText,
@@ -11,6 +12,7 @@ import {
   GameDescText,
   GameCoverPhoto,
   GameProfileImage,
+  ColoredButton,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
 import type { GameInfo, GameFilter } from "../../../types"
@@ -81,6 +83,44 @@ const GameProfile = () => {
         </Stack>
         <GameTrailerPlayer url={gameDetails.trailerLink} />
         <GameDescText description={gameDetails.longDesc} fontSize="15px" />
+
+        <Stack direction="row" spacing={1} marginBottom={2}>
+          <ColoredButton
+            text="Like!"
+            handleClick={() => {
+              console.log("Liked Clicked")
+            }}
+            icon={Favorite}
+            width="fit-content"
+          />
+
+          <ColoredButton
+            text="Support"
+            handleClick={() => {
+              console.log("Support Clicked")
+            }}
+            icon={Support}
+            width="fit-content"
+          />
+
+          <ColoredButton
+            text="Team"
+            handleClick={() => {
+              console.log("Group Clicked")
+            }}
+            icon={Group}
+            width="fit-content"
+          />
+
+          <ColoredButton
+            text="Roadmap"
+            handleClick={() => {
+              console.log("Road MapClicked")
+            }}
+            icon={MapIcon}
+            width="fit-content"
+          />
+        </Stack>
       </Container>
     </div>
   )
