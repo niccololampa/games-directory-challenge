@@ -7,6 +7,7 @@ import {
   GameProfileInfoBox,
   GameTrailerPlayer,
   HighlightBox,
+  GameDescText,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
 import type { GameInfo, GameFilter } from "../../../types"
@@ -60,6 +61,7 @@ const GameProfile = () => {
           <GameProfileInfoBox label="protcol" value={gameDetails.protocol} />
         </Stack>
         <GameTrailerPlayer url={gameDetails.trailerLink} />
+        <GameDescText description={gameDetails.longDesc} fontSize="15px" />
       </Container>
     </div>
   )

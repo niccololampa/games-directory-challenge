@@ -132,7 +132,7 @@ const GameModal = ({
               ))}
             </StyledLiveGenreBox>
             <GameNameText gameName={gameName} />
-            <GameDescText description={shortDesc} />
+            <GameDescText description={shortDesc} fontSize="12px" />
           </StyledInfoBox>
           <StyledLearnMoreBox>
             <ColoredButton text="Learn More" handleClick={handleLearnMore} />
