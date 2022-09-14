@@ -39,7 +39,20 @@ const GameProfile = () => {
         <LiveGameInfoText live={gameDetails.live} />
         <PageHeader1 title={gameDetails.gameName} />
         <Stack direction="row" spacing={2} marginBottom={2}>
-          <HighlightBox status={gameDetails.claimed} textPos="Claimed" textNeg="Unclaimed" />
+          <HighlightBox
+            status={gameDetails.claimed}
+            textPos="Claimed"
+            textNeg="Unclaimed"
+            colorNeg="#6b6b6b"
+            colorPos="#eed4a5"
+          />
+          <HighlightBox
+            status={gameDetails.claimed}
+            textPos="THIS GAME HAS BEEN CLAIMED BY THE GAME PUBLISHER"
+            textNeg="THIS GAME HAS NOT BEEN CLAIMED BY THE GAME PUBLISHER"
+            colorNeg="#282828"
+            colorPos="#282828"
+          />
         </Stack>
         <Stack direction="row" spacing={2}>
           <GameProfileInfoBox label="publisher" value={gameDetails.publisher} />

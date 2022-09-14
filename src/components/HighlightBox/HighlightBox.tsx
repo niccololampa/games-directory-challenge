@@ -2,16 +2,18 @@ import React from "react"
 import { Box, Typography } from "@mui/material"
 import { styled } from "@mui/material/styles"
 
-const StyledHighlightBox = styled(Box)(({ status }: { status: boolean }) => ({
-  backgroundColor: status ? "#eed4a5" : "#6b6b6b",
-  borderRadius: "5%",
-  height: "30px",
-  minWidth: "130px",
-  padding: "8px 20px",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-}))
+const StyledHighlightBox = styled(Box)(
+  ({ status, colorNeg, colorPos }: { status: boolean; colorNeg: string; colorPos: string }) => ({
+    backgroundColor: status ? colorPos : colorNeg,
+    borderRadius: "5%",
+    height: "30px",
+    minWidth: "130px",
+    padding: "8px 20px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  }),
+)
 
 const StyledText = styled(Typography)({
   color: "#fff",
@@ -23,14 +25,18 @@ const StyledText = styled(Typography)({
 const HighlightBox = ({
   textPos,
   textNeg,
+  colorNeg,
+  colorPos,
   status,
 }: {
   textPos: string
   textNeg: string
+  colorNeg: string
+  colorPos: string
   status: boolean
 }) => {
   return (
-    <StyledHighlightBox status={status}>
+    <StyledHighlightBox status={status} colorNeg={colorNeg} colorPos={colorPos}>
       <StyledText>{status ? textPos : textNeg}</StyledText>
     </StyledHighlightBox>
   )
