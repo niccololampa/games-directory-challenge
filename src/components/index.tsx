@@ -22,3 +22,4 @@ export { default as EarnAllianceLogo } from "./EarnAllianceLogo/EarnAllianceLogo
 export { default as GameProfileInfoBox } from "./GameProfileInfoBox/GameProfileInfoBox"
 export { default as GameTrailerPlayer } from "./GameTrailerPlayer/GameTrailerPlayer"
 export { default as HighlightBox } from "./HighlightBox/HighlightBox"
+export { default as GameCoverPhoto } from "./GameCoverPhoto/GameCoverPhoto"

@@ -16,6 +16,7 @@ export interface GameInfo {
   trailerLink: string
   updates: GameUpdates[]
   relatedPosts: GamePost[]
+  coverPhoto: string
 }
 
 export interface GameUpdates {

@@ -8,6 +8,7 @@ import {
   GameTrailerPlayer,
   HighlightBox,
   GameDescText,
+  GameCoverPhoto,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
 import type { GameInfo, GameFilter } from "../../../types"
@@ -36,6 +37,7 @@ const GameProfile = () => {
 
   return (
     <div>
+      <GameCoverPhoto coverPhoto={gameDetails.coverPhoto} width="100%" height="400px" />
       <Container maxWidth="xl" sx={{ marginTop: "80px" }}>
         <LiveGameInfoText live={gameDetails.live} />
         <PageHeader1 title={gameDetails.gameName} />
