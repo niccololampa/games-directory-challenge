@@ -1,8 +1,14 @@
 import * as React from "react"
-import "./PageHeader1.css"
+import { styled } from "@mui/material/styles"
+import { Typography } from "@mui/material"
+
+const StyledTypography = styled(Typography)(() => ({
+  fontSize: "35px",
+  fontWeight: "bold",
+}))
 
 const PageHeader1 = ({ title }: { title: string }) => {
-  return <h1 className="page-header-1">{title}</h1>
+  return <StyledTypography variant="h1">{title}</StyledTypography>
 }
 
 export default PageHeader1
