@@ -13,6 +13,7 @@ import {
   GameCoverPhoto,
   GameProfileImage,
   ColoredButton,
+  SocialShareButtons,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
 import type { GameInfo, GameFilter } from "../../../types"
@@ -120,6 +121,10 @@ const GameProfile = () => {
             icon={MapIcon}
             width="fit-content"
           />
+        </Stack>
+
+        <Stack direction="row" spacing={1} marginBottom={2}>
+          <SocialShareButtons fillColor="#fff" size="large" />
         </Stack>
       </Container>
     </div>

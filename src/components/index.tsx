@@ -24,3 +24,4 @@ export { default as GameTrailerPlayer } from "./GameTrailerPlayer/GameTrailerPla
 export { default as HighlightBox } from "./HighlightBox/HighlightBox"
 export { default as GameCoverPhoto } from "./GameCoverPhoto/GameCoverPhoto"
 export { default as GameProfileImage } from "./GameProfileImage/GameProfileImage"
+export { default as SocialShareButtons } from "./SocialShareButtons/SocialShareButtons"
