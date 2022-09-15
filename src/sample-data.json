@@ -22,7 +22,50 @@
       { "userName": "Nathan", "userImage": "user-sample-image.jpg" }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
+    ],
     "relatedPosts": [],
     "coverPhoto": "/images/slide-show-image-1.jpg"
   },
@@ -49,7 +92,15 @@
       { "userName": "Nathan", "userImage": "user-sample-image.jpg" }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
+    ],
     "relatedPosts": [],
     "coverPhoto": "/images/slide-show-image-1.jpg"
   },

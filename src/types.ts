@@ -14,17 +14,17 @@ export interface GameInfo {
   protocol: string
   userLikes: GameUser[]
   trailerLink: string
-  updates: GameUpdates[]
+  updates: GameUpdate[]
   relatedPosts: GamePost[]
   coverPhoto: string
 }
 
-export interface GameUpdates {
+export interface GameUpdate {
   id: string
-  date: Date
-  label: string
-  description: string
   image: string
+  date: string
+  title: string
+  summary: string
 }
 
 export interface GamePost {

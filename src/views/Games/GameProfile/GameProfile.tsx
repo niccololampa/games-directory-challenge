@@ -15,9 +15,10 @@ import {
   GameProfileImage,
   ColoredButton,
   SocialShareButtons,
+  GameUpdateCard,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
-import type { GameInfo, GameFilter } from "../../../types"
+import type { GameInfo, GameFilter, GameUpdate } from "../../../types"
 
 const data: GameInfo[] = jsonData as GameInfo[]
 
@@ -35,7 +36,15 @@ const StyledProfileImageContainer = styled(Container)({
   top: "-200px",
 })
 
+const StyledUpdateBox = styled(Box)({
+  height: "500px",
+  marginTop: "25px",
+  // justifyContent: "center",
+  display: "flex",
+})
+
 const GameProfile = () => {
+  const numDispUpdates = 3
   const { id } = useParams()
   const [gameDetails, setGameDetails] = useState<GameInfo>()
 
@@ -49,6 +58,20 @@ const GameProfile = () => {
 
   if (!gameDetails) {
     return <div></div>
+  }
+
+  const gameUpdates = (updates: GameUpdate[]) => {
+    const displayedUpdates = []
+
+    for (let i = 0; i < numDispUpdates; i++) {
+      if (i > updates.length - 1) {
+        break
+      }
+
+      displayedUpdates.push(updates[i])
+    }
+
+    return displayedUpdates
   }
 
   return (
@@ -128,6 +151,13 @@ const GameProfile = () => {
           <SocialShareButtons fillColor="#fff" size="large" />
         </Stack>
         <PageHeader2 title="Latest Updates" />
+        <StyledUpdateBox>
+          <Stack direction="row" spacing={1} marginBottom={2}>
+            {gameUpdates(gameDetails.updates).map((update, index) => (
+              <GameUpdateCard key={index} update={update} />
+            ))}
+          </Stack>
+        </StyledUpdateBox>
         <PageHeader2 title="Related Posts" />
         <PageHeader2 title="Others that like this game" />
       </Container>
