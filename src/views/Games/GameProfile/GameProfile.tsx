@@ -5,6 +5,7 @@ import { Container, Box, Stack } from "@mui/material"
 import { Favorite, Groups, Map as MapIcon, Support } from "@mui/icons-material"
 import {
   PageHeader1,
+  PageHeader2,
   LiveGameInfoText,
   GameProfileInfoBox,
   GameTrailerPlayer,
@@ -126,6 +127,9 @@ const GameProfile = () => {
         <Stack direction="row" spacing={1} marginBottom={2}>
           <SocialShareButtons fillColor="#fff" size="large" />
         </Stack>
+        <PageHeader2 title="Latest Updates" />
+        <PageHeader2 title="Related Posts" />
+        <PageHeader2 title="Others that like this game" />
       </Container>
     </div>
   )
