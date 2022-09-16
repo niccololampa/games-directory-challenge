@@ -90,6 +90,7 @@ const StyledCard = styled(Card)(({ color }: { color: string }) => ({
 
 const StyledCardContent = styled(CardContent)(({ color }: { color: string }) => ({
   backgroundColor: color,
+  height: "100px",
   padding: "1rem 1.5rem 1.5rem",
 }))
 
@@ -109,11 +110,12 @@ const StyledCardMedia = styled(CardMedia)(
   }),
 )
 
+const StyledDescBox = styled(Box)({ height: "80%", overflow: "hidden" })
+
 const StyledDescription = styled(Typography)({
   fontFamily: "Montserrat",
   color: "#fff",
   opacity: 0.87,
-  marginTop: "2rem",
   fontWeight: 500,
   fontSize: 14,
 })
@@ -129,6 +131,7 @@ const GameCard = ({
 }) => {
   const { gameName, image, live, shortDesc, genres, os, nfts } = gameInfo
   const [modalVisible, setModalVisible] = useState(false)
+  const [cardHovered, setCardHovered] = useState(true)
 
   const handleCardClick = () => {
     setModalVisible(true)
@@ -142,7 +145,12 @@ const GameCard = ({
 
   return (
     <>
-      <StyledCardActionArea width={width} onClick={handleCardClick}>
+      <StyledCardActionArea
+        width={width}
+        onClick={handleCardClick}
+        onMouseOver={() => setCardHovered(true)}
+        onMouseOut={() => setCardHovered(false)}
+      >
         <StyledCard color={color}>
           <StyledOSMediaBox>
             <GameOSInfo os={os} size={20} color="#fff" />
@@ -150,13 +158,21 @@ const GameCard = ({
             <StyledCardMedia image={image} />
           </StyledOSMediaBox>
           <StyledCardContent color={color}>
-            <LiveGameInfoText live={live} />
+            {!cardHovered && <LiveGameInfoText live={live} />}
             <GameNameText gameName={gameName} />
-            <Container sx={{ display: "flex" }} disableGutters>
-              {genres.map((genre, index) => (
-                <GameGenreText key={index} genre={genre} />
-              ))}
-            </Container>
+            {!cardHovered && (
+              <Container sx={{ display: "flex" }} disableGutters>
+                {genres.map((genre, index) => (
+                  <GameGenreText key={index} genre={genre} />
+                ))}
+              </Container>
+            )}
+
+            {cardHovered && (
+              <StyledDescBox>
+                <StyledDescription>{shortDesc}</StyledDescription>
+              </StyledDescBox>
+            )}
           </StyledCardContent>
         </StyledCard>
       </StyledCardActionArea>
