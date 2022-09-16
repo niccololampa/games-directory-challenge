@@ -29,13 +29,15 @@ const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string
   borderWidth: 2,
 
   borderImage:
-    "linear-gradient( 135deg, transparent, #eed5a5, #eed5a538, transparent, #eed5a5, #eed5a538   )",
+    "linear-gradient( 135deg, transparent, #eed5a5, transparent, transparent, #eed5a5, transparent)",
 
   borderImageSlice: 50,
   transition: "0.2s",
   width,
   "&:hover": {
     transform: "scale(1.1)",
+    outline: "none",
+    boxShadow: "0 0 20px  #eed5a5",
   },
 }))
 
@@ -43,7 +45,7 @@ const StyledCard = styled(Card)(({ color }: { color: string }) => ({
   borderRadius: 0,
   boxShadow: "none",
   "&:hover": {
-    boxShadow: `0 6px 12px 0 ${Color(color).rotate(-12).darken(0.2).fade(0.5)}`,
+    // boxShadow: `0 6px 12px 0 ${Color(color).rotate(-12).darken(0.2).fade(0.5)}`,
   },
 }))
 
