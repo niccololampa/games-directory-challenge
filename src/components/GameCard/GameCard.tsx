@@ -10,6 +10,8 @@ import {
   Box,
 } from "@mui/material"
 import { styled } from "@mui/material/styles"
+import { keyframes } from "@mui/system"
+
 import {
   GameModal,
   LiveGameInfoText,
@@ -19,6 +21,42 @@ import {
   NFTSDisplay,
 } from "../../components"
 import type { GameInfo } from "../../types"
+
+const popOutandIn = keyframes`
+0% {
+    transform: scale(1.0)
+},
+10% {
+    transform: scale(1.04)
+},
+20% {
+    transform: scale(1.08)
+},
+30% {
+    transform: scale(1.12)
+},
+40% {
+    transform: scale(1.16)
+},
+50% {
+    transform: scale(1.2)
+},
+60% {
+    transform: scale(1.18)
+},
+70% {
+    transform: scale(1.16)
+},
+80% {
+    transform: scale(1.14)
+},
+90% {
+    transform: scale(1.12)
+},
+100% {
+    transform: scale(1.1)
+}
+`
 
 const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string | number }) => ({
   margin: 10,
@@ -36,8 +74,9 @@ const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string
   width,
   "&:hover": {
     transform: "scale(1.1)",
+    animation: `${popOutandIn} 0.4s ease`,
     outline: "none",
-    boxShadow: "0 0 20px  #eed5a5",
+    boxShadow: "0 0 80px  #eed5a5",
   },
 }))
 
