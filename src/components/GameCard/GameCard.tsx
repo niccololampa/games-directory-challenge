@@ -55,6 +55,7 @@ const popOutandIn = keyframes`
 },
 100% {
     transform: scale(1.1)
+    margin: "0px 100px"
 }
 `
 
@@ -76,19 +77,21 @@ const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string
     transform: "scale(1.1)",
     animation: `${popOutandIn} 0.4s ease`,
     outline: "none",
-    boxShadow: "0 0 80px  #eed5a5",
+    boxShadow: "0 0 30px  #a4d3f1",
   },
 }))
 
-const StyledCard = styled(Card)(({ color }: { color: string }) => ({
-  borderRadius: 0,
-  boxShadow: "none",
-  "&:hover": {
-    // boxShadow: `0 6px 12px 0 ${Color(color).rotate(-12).darken(0.2).fade(0.5)}`,
-  },
-}))
+const StyledCard = styled(Card)(
+  ({ color, colorHover }: { color: string; colorHover?: string }) => ({
+    borderRadius: 0,
+    boxShadow: "none",
+    "&:hover": {
+      // boxShadow: `0 6px 12px 0 ${Color(color).rotate(-12).darken(0.2).fade(0.5)}`,
+    },
+  }),
+)
 
-const StyledCardContent = styled(CardContent)(({ color }: { color: string }) => ({
+const StyledCardContent = styled(CardContent)(({ color = "#2e4857" }: { color?: string }) => ({
   backgroundColor: color,
   height: "100px",
   padding: "1rem 1.5rem 1.5rem",
@@ -122,10 +125,12 @@ const StyledDescription = styled(Typography)({
 
 const GameCard = ({
   color,
+  colorHoverContent,
   width,
   gameInfo,
 }: {
   color: string
+  colorHoverContent?: string
   gameInfo: GameInfo
   width?: number | string
 }) => {
@@ -157,7 +162,7 @@ const GameCard = ({
             {nfts && <NFTSDisplay />}
             <StyledCardMedia image={image} />
           </StyledOSMediaBox>
-          <StyledCardContent color={color}>
+          <StyledCardContent color={!cardHovered ? color : colorHoverContent}>
             {!cardHovered && <LiveGameInfoText live={live} />}
             <GameNameText gameName={gameName} />
             {!cardHovered && (

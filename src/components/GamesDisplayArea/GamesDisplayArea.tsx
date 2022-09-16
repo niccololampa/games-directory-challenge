@@ -14,7 +14,13 @@ const GamesDisplayArea = ({ gamesDisplayed }: { gamesDisplayed: GameInfo[] }) =>
       }}
     >
       {gamesDisplayed.map((game, index) => (
-        <GameCard key={index} gameInfo={game} color="#2e4857" width={256} />
+        <GameCard
+          key={index}
+          gameInfo={game}
+          color="#2e4857"
+          colorHoverContent="#1e2c35"
+          width={256}
+        />
       ))}
     </Container>
   )
