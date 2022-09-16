@@ -60,6 +60,9 @@ const GameUpdateCard = ({ update }: { update: GameUpdate }) => {
         handleClick={() => {
           console.log("Read More")
         }}
+        backColor="#eeeea5"
+        backColorHover="#f7f7d4"
+        textColor="#000000"
       />
     </StyledUpdateBox>
   )

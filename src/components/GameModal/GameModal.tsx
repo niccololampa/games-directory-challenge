@@ -135,7 +135,13 @@ const GameModal = ({
             <GameDescText description={shortDesc} fontSize="12px" />
           </StyledInfoBox>
           <StyledLearnMoreBox>
-            <ColoredButton text="Learn More" handleClick={handleLearnMore} />
+            <ColoredButton
+              text="Learn More"
+              handleClick={handleLearnMore}
+              backColor="#eeeea5"
+              backColorHover="#f7f7d4"
+              textColor="#000000"
+            />
           </StyledLearnMoreBox>
         </Box>
       </Fade>

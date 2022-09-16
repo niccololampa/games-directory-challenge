@@ -117,6 +117,9 @@ const GameProfile = () => {
             }}
             icon={Favorite}
             width="fit-content"
+            backColor="#eeeea5"
+            backColorHover="#f7f7d4"
+            textColor="#000000"
           />
 
           <ColoredButton
@@ -126,6 +129,9 @@ const GameProfile = () => {
             }}
             icon={Support}
             width="fit-content"
+            backColor="#eeeea5"
+            backColorHover="#f7f7d4"
+            textColor="#000000"
           />
 
           <ColoredButton
@@ -135,6 +141,9 @@ const GameProfile = () => {
             }}
             icon={Groups}
             width="fit-content"
+            backColor="#eeeea5"
+            backColorHover="#f7f7d4"
+            textColor="#000000"
           />
 
           <ColoredButton
@@ -144,6 +153,9 @@ const GameProfile = () => {
             }}
             icon={MapIcon}
             width="fit-content"
+            backColor="#eeeea5"
+            backColorHover="#f7f7d4"
+            textColor="#000000"
           />
         </Stack>
 
@@ -158,7 +170,36 @@ const GameProfile = () => {
             ))}
           </Stack>
         </StyledUpdateBox>
-        <PageHeader2 title="Related Posts" />
+
+        <Stack direction="row" spacing={1} marginBottom={2}>
+          <PageHeader2 title="Related Posts" />
+          <ColoredButton
+            text="Connect to Game's Twitter"
+            handleClick={() => {
+              console.log("Connect to Game's Twitter")
+            }}
+            width="fit-content"
+            backColor="#000000"
+            backColorHover="#f7f7d4"
+            textColor="#ffffff"
+            borderColor="#f7f7d4"
+            borderStyle="solid"
+            borderWidth="1px"
+          />
+          <ColoredButton
+            text="Connect to Game's Annoucements"
+            handleClick={() => {
+              console.log("Connect to Game's Annoucements")
+            }}
+            width="fit-content"
+            backColor="#000000"
+            backColorHover="#f7f7d4"
+            textColor="#ffffff"
+            borderColor="#f7f7d4"
+            borderStyle="solid"
+            borderWidth="1px"
+          />
+        </Stack>
         <PageHeader2 title="Others that like this game" />
       </Container>
     </div>
