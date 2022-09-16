@@ -134,9 +134,9 @@ const GameCard = ({
   gameInfo: GameInfo
   width?: number | string
 }) => {
-  const { gameName, image, live, shortDesc, genres, os, nfts } = gameInfo
+  const { gameName, image, live, shortDesc, genres, os, nfts, gif } = gameInfo
   const [modalVisible, setModalVisible] = useState(false)
-  const [cardHovered, setCardHovered] = useState(true)
+  const [cardHovered, setCardHovered] = useState(false)
 
   const handleCardClick = () => {
     setModalVisible(true)
@@ -160,7 +160,11 @@ const GameCard = ({
           <StyledOSMediaBox>
             <GameOSInfo os={os} size={20} color="#fff" />
             {nfts && <NFTSDisplay />}
-            <StyledCardMedia image={image} />
+            {!cardHovered ? (
+              <StyledCardMedia image={image} src="img" />
+            ) : (
+              <StyledCardMedia image={gif ? gif : image} src="img" />
+            )}
           </StyledOSMediaBox>
           <StyledCardContent color={!cardHovered ? color : colorHoverContent}>
             {!cardHovered && <LiveGameInfoText live={live} />}

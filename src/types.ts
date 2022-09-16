@@ -17,6 +17,7 @@ export interface GameInfo {
   updates: GameUpdate[]
   relatedPosts: GamePost[]
   coverPhoto: string
+  gif?: string
 }
 
 export interface GameUpdate {
