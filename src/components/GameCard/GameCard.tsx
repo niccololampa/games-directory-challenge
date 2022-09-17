@@ -22,9 +22,82 @@ import {
 } from "../../components"
 import type { GameInfo } from "../../types"
 
+const moveRight = keyframes`
+0% {
+  transform: translateX(0%)
+},
+10% {
+  transform: translateX(10%)
+},
+20% {
+  transform: translateX(20%)
+},
+30% {
+  transform: translateX(30%)
+},
+40% {
+  transform: translateX(40%)
+},
+50% {
+  transform: translateX(50%)
+},
+60% {
+  transform: translateX(40%)
+},
+70% {
+  transform: translateX(30%)
+},
+80% {
+  transform: translateX(20%)
+},
+90% {
+  transform: translateX(10%)
+},
+100% {
+ transform: translateX(0%)
+ }
+`
+
+const moveLeft = keyframes`
+0% {
+  transform: translateX(0%)
+},
+10% {
+  transform: translateX(-10%)
+},
+20% {
+  transform: translateX(-20%)
+},
+30% {
+  transform: translateX(-30%)
+},
+40% {
+  transform: translateX(-40%)
+},
+50% {
+  transform: translateX(-50%)
+},
+60% {
+  transform: translateX(-40%)
+},
+70% {
+  transform: translateX(-30%)
+},
+80% {
+  transform: translateX(-20%)
+},
+90% {
+  transform: translateX(-10%)
+},
+100% {
+ transform: translateX(0%)
+ }
+`
+
 const popOutandIn = keyframes`
 0% {
-    transform: scale(1.0)
+    transform: scale(1.0),
+    margin: 500px
 },
 10% {
     transform: scale(1.04)
@@ -55,31 +128,45 @@ const popOutandIn = keyframes`
 },
 100% {
     transform: scale(1.1)
-    margin: "0px 100px"
+    margin: 500px
 }
 `
 
-const StyledCardActionArea = styled(CardActionArea)(({ width }: { width?: string | number }) => ({
-  margin: 10,
-  borderRadius: 0,
-  borderTop: "solid",
-  borderBottom: "solid",
-  borderRight: "solid",
-  borderWidth: 2,
+const StyledCardActionArea = styled(CardActionArea)(
+  ({
+    width,
+    animation,
+    margin,
+  }: {
+    width?: string | number
+    animation?: string
+    margin: string
+  }) => {
+    return {
+      margin,
+      borderRadius: 0,
+      borderTop: "solid",
+      borderBottom: "solid",
+      borderRight: "solid",
+      borderWidth: 2,
+      animation,
+      borderImage:
+        "linear-gradient( 135deg, transparent, #eed5a5, transparent, transparent, #eed5a5, transparent)",
 
-  borderImage:
-    "linear-gradient( 135deg, transparent, #eed5a5, transparent, transparent, #eed5a5, transparent)",
-
-  borderImageSlice: 50,
-  transition: "0.2s",
-  width,
-  "&:hover": {
-    transform: "scale(1.1)",
-    animation: `${popOutandIn} 0.4s ease`,
-    outline: "none",
-    boxShadow: "0 0 30px  #a4d3f1",
+      borderImageSlice: 50,
+      transition: "0.2s",
+      width,
+      minWidth: "200px",
+      "&:hover": {
+        transform: "scale(1.1)",
+        animation: `${popOutandIn} 0.4s ease`,
+        margin: "10px 50px",
+        outline: "none",
+        boxShadow: "0 0 30px  #a4d3f1",
+      },
+    }
   },
-}))
+)
 
 const StyledCard = styled(Card)(
   ({ color, colorHover }: { color: string; colorHover?: string }) => ({
@@ -100,12 +187,14 @@ const StyledCardContent = styled(CardContent)(({ color = "#2e4857" }: { color?: 
 const StyledOSMediaBox = styled(Box)({
   position: "relative",
   height: "190px",
+  overflow: "hidden",
 })
 
 const StyledCardMedia = styled(CardMedia)(
   ({ bgColor = "rgba(0, 0, 0, 0.08)" }: { bgColor?: string }) => ({
     width: "100%",
-    paddingBottom: "75%",
+    minWidth: "100%",
+    paddingBottom: "100%",
     backgroundColor: bgColor,
     position: "absolute",
     top: 0,
@@ -128,15 +217,28 @@ const GameCard = ({
   colorHoverContent,
   width,
   gameInfo,
+  onHover,
+  onHoverOut,
+  rowHovered,
+  location,
+  locCardHovered,
 }: {
   color: string
   colorHoverContent?: string
   gameInfo: GameInfo
   width?: number | string
+  onHover: () => void
+  onHoverOut: () => void
+  rowHovered: boolean
+  location: number
+  locCardHovered: number | undefined
 }) => {
   const { gameName, image, live, shortDesc, genres, os, nfts, gif } = gameInfo
   const [modalVisible, setModalVisible] = useState(false)
   const [cardHovered, setCardHovered] = useState(false)
+
+  let animation = ""
+  let cardMargin = "10px 10px"
 
   const handleCardClick = () => {
     setModalVisible(true)
@@ -146,15 +248,32 @@ const GameCard = ({
     setModalVisible(false)
   }
 
+  const handleMouseOver = () => {
+    setCardHovered(true)
+    onHover()
+  }
+
+  const handleMouseOut = () => {
+    setCardHovered(false)
+    onHoverOut()
+  }
+
   // (index !== genre.length - 1 ? ", " : "")}
+
+  if (typeof locCardHovered === "number" && rowHovered && !cardHovered) {
+    animation = `${location < locCardHovered ? moveLeft : moveRight} 0.4s ease`
+    cardMargin = "10px 0px"
+  }
 
   return (
     <>
       <StyledCardActionArea
         width={width}
         onClick={handleCardClick}
-        onMouseOver={() => setCardHovered(true)}
-        onMouseOut={() => setCardHovered(false)}
+        onMouseOver={() => handleMouseOver()}
+        onMouseOut={() => handleMouseOut()}
+        animation={animation}
+        margin={cardMargin}
       >
         <StyledCard color={color}>
           <StyledOSMediaBox>
