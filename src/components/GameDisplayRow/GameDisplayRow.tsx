@@ -23,7 +23,7 @@ const GameDisplayRow = ({ row }: { row: GameInfo[] }) => {
       display: "flex",
       justifyContent: "center",
       alignContent: "space-around",
-      // columnGap: rowHovered ? "-20px" : "initial",
+      // columnGap: rowHovered ? "0px" : "initial",
     }
   })
 

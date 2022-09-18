@@ -24,80 +24,103 @@ import type { GameInfo } from "../../types"
 
 const moveRight = keyframes`
 0% {
-  transform: translateX(0%)
+  transform: translateX(0%);
+  margin-left: 0;
+  margin-right: 0;
 },
 10% {
-  transform: translateX(10%)
+  transform: translateX(5%);
 },
 20% {
-  transform: translateX(20%)
+  transform: translateX(10%);
+},
+25% {
+  margin-left: 10px;
+  margin-right: 10px;
 },
 30% {
-  transform: translateX(30%)
+  transform: translateX(15%);
 },
 40% {
-  transform: translateX(40%)
+  transform: translateX(20%);
 },
 50% {
-  transform: translateX(50%)
+  transform: translateX(25%);
 },
 60% {
-  transform: translateX(40%)
+  transform: translateX(20%);
 },
 70% {
-  transform: translateX(30%)
+  transform: translateX(15%);
+},
+75% {
+  margin-left: 0px;
+  margin-right: 0px;
 },
 80% {
-  transform: translateX(20%)
+  transform: translateX(10%);
 },
 90% {
-  transform: translateX(10%)
+  transform: translateX(5%);
 },
 100% {
- transform: translateX(0%)
+ transform: translateX(0%);
+  margin-left: 5px;
+  margin-right: 5px;
  }
 `
 
 const moveLeft = keyframes`
 0% {
-  transform: translateX(0%)
+  transform: translateX(0%);
+  margin-left: 0;
+  margin-right: 0;
 },
 10% {
-  transform: translateX(-10%)
+  transform: translateX(-5%);
 },
 20% {
-  transform: translateX(-20%)
+  transform: translateX(-10%);
+},
+25% {
+  margin-left: 10px;
+  margin-right: 10px;
 },
 30% {
-  transform: translateX(-30%)
+  transform: translateX(-15%);
 },
 40% {
-  transform: translateX(-40%)
+  transform: translateX(-20%);
 },
 50% {
-  transform: translateX(-50%)
+  transform: translateX(-25%);
 },
 60% {
-  transform: translateX(-40%)
+  transform: translateX(-20%);
 },
 70% {
-  transform: translateX(-30%)
+  transform: translateX(-15%);
+},
+75% {
+  margin-left: 0px;
+  margin-right: 0px;
 },
 80% {
-  transform: translateX(-20%)
+  transform: translateX(-10%);
 },
 90% {
-  transform: translateX(-10%)
+  transform: translateX(-5%);
 },
 100% {
- transform: translateX(0%)
+ transform: translateX(0%);
+  margin-left: 5px;
+  margin-right: 5px;
  }
 `
 
 const popOutandIn = keyframes`
 0% {
     transform: scale(1.0),
-    margin: 500px
 },
 10% {
     transform: scale(1.04)
@@ -128,7 +151,6 @@ const popOutandIn = keyframes`
 },
 100% {
     transform: scale(1.1)
-    margin: 500px
 }
 `
 
@@ -137,9 +159,11 @@ const StyledCardActionArea = styled(CardActionArea)(
     width,
     animation,
     margin,
+    transition,
   }: {
     width?: string | number
     animation?: string
+    transition?: string
     margin: string
   }) => {
     return {
@@ -154,13 +178,13 @@ const StyledCardActionArea = styled(CardActionArea)(
         "linear-gradient( 135deg, transparent, #eed5a5, transparent, transparent, #eed5a5, transparent)",
 
       borderImageSlice: 50,
-      transition: "0.2s",
+      transition: transition,
       width,
       minWidth: "200px",
       "&:hover": {
         transform: "scale(1.1)",
-        animation: `${popOutandIn} 0.4s ease`,
-        margin: "10px 50px",
+        animation: `${popOutandIn} 0.6s ease`,
+        margin: "10px 30px",
         outline: "none",
         boxShadow: "0 0 30px  #a4d3f1",
       },
@@ -238,7 +262,8 @@ const GameCard = ({
   const [cardHovered, setCardHovered] = useState(false)
 
   let animation = ""
-  let cardMargin = "10px 10px"
+  let cardMargin = "10px 5px"
+  let transition = ""
 
   const handleCardClick = () => {
     setModalVisible(true)
@@ -261,8 +286,9 @@ const GameCard = ({
   // (index !== genre.length - 1 ? ", " : "")}
 
   if (typeof locCardHovered === "number" && rowHovered && !cardHovered) {
-    animation = `${location < locCardHovered ? moveLeft : moveRight} 0.4s ease`
-    cardMargin = "10px 0px"
+    animation = `${location < locCardHovered ? moveLeft : moveRight} 0.6s ease-out`
+    cardMargin = "10px 5px"
+    transition = "margin 1s ease"
   }
 
   return (
@@ -274,6 +300,7 @@ const GameCard = ({
         onMouseOut={() => handleMouseOut()}
         animation={animation}
         margin={cardMargin}
+        transition={transition}
       >
         <StyledCard color={color}>
           <StyledOSMediaBox>
