@@ -273,6 +273,7 @@ const GameCard = ({
   const transition = ""
 
   const handleCardClick = () => {
+    console.log("click")
     setModalVisible(true)
   }
 
@@ -320,7 +321,7 @@ const GameCard = ({
             )}
           </StyledOSMediaBox>
           <StyledCardContent color={!cardHovered ? color : colorHoverContent}>
-            {!cardHovered && <LiveGameInfoText live={live} />}
+            {!cardHovered && <LiveGameInfoText live={live ? true : false} />}
             <GameNameText gameName={gameName} />
             {!cardHovered && (
               <Container sx={{ display: "flex" }} disableGutters>

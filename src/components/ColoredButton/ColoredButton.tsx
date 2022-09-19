@@ -11,7 +11,7 @@ const StyledButton = styled(Button)(
     textColor = "#000000",
     borderColor = "initial",
     borderStyle = "none",
-    borderWidth = "initial",
+    borderwidth = "initial",
   }: {
     width?: string | number
     textColor: string
@@ -19,7 +19,7 @@ const StyledButton = styled(Button)(
     backColorHover: string
     borderColor?: string
     borderStyle?: string
-    borderWidth?: string
+    borderwidth?: string
   }) => ({
     backgroundColor: backColor,
     "&:hover": {
@@ -28,7 +28,7 @@ const StyledButton = styled(Button)(
     color: textColor,
     borderColor: borderColor,
     borderStyle: borderStyle,
-    borderWidth: borderWidth,
+    borderWidth: borderwidth,
     textTransform: "capitalize",
     width: width ? width : "100%",
     height: "40px",
@@ -52,7 +52,7 @@ const ColoredButton = ({
   backColorHover,
   borderColor,
   borderStyle,
-  borderWidth,
+  borderwidth,
 }: {
   text: string
   handleClick: () => void
@@ -62,7 +62,7 @@ const ColoredButton = ({
   backColorHover: string
   borderColor?: string
   borderStyle?: string
-  borderWidth?: string
+  borderwidth?: string
   icon?: SvgIconComponent
 }) => {
   return (
@@ -75,7 +75,7 @@ const ColoredButton = ({
       backColorHover={backColorHover}
       borderColor={borderColor}
       borderStyle={borderStyle}
-      borderWidth={borderWidth}
+      borderwidth={borderwidth}
     >
       {icon && createElement(icon)}
       <StyledButtonText>{text}</StyledButtonText>

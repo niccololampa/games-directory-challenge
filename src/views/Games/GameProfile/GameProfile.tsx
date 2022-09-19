@@ -83,7 +83,7 @@ const GameProfile = () => {
         <StyledProfileImageContainer maxWidth="xl" disableGutters>
           <GameProfileImage image={gameDetails.image} width="200px" height="200px" />
         </StyledProfileImageContainer>
-        <LiveGameInfoText live={gameDetails.live} />
+        <LiveGameInfoText live={gameDetails.live ? true : false} />
         <PageHeader1 title={gameDetails.gameName} />
         <Stack direction="row" spacing={2} marginBottom={2}>
           <HighlightBox
@@ -184,7 +184,7 @@ const GameProfile = () => {
             textColor="#ffffff"
             borderColor="#f7f7d4"
             borderStyle="solid"
-            borderWidth="1px"
+            borderwidth="1px"
           />
           <ColoredButton
             text="Connect to Game's Annoucements"
@@ -197,7 +197,7 @@ const GameProfile = () => {
             textColor="#ffffff"
             borderColor="#f7f7d4"
             borderStyle="solid"
-            borderWidth="1px"
+            borderwidth="1px"
           />
         </Stack>
         <PageHeader2 title="Others that like this game" />

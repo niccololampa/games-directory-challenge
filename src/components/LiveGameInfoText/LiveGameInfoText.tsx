@@ -12,7 +12,7 @@ const StyledLive = styled(Typography)(({ live }: { live: boolean }) => {
 })
 
 const LiveGameInfoText = ({ live }: { live: boolean }) => {
-  return <StyledLive live={live}>{live ? "Live" : "Upcoming"}</StyledLive>
+  return <StyledLive live={live ? true : false}>{live ? "Live" : "Upcoming"}</StyledLive>
 }
 
 export default LiveGameInfoText

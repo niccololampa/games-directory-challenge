@@ -6,16 +6,16 @@ import WindowIcon from "@mui/icons-material/Window"
 import { OS } from "../../types"
 
 const StyledAppleIcon = styled(AppleIcon)(
-  ({ iconColor, iconSize }: { iconColor: string; iconSize: number }) => ({
-    fontSize: iconSize,
-    color: iconColor,
+  ({ iconcolor, iconsize }: { iconcolor: string; iconsize: number }) => ({
+    fontSize: iconsize,
+    color: iconcolor,
   }),
 )
 
 const StyledWindowIcon = styled(WindowIcon)(
-  ({ iconColor, iconSize }: { iconColor: string; iconSize: number }) => ({
-    fontSize: iconSize,
-    color: iconColor,
+  ({ iconcolor, iconsize }: { iconcolor: string; iconsize: number }) => ({
+    fontSize: iconsize,
+    color: iconcolor,
   }),
 )
 
@@ -32,8 +32,8 @@ const StyledGameOSContainer = styled(Container)({
 const GameOSInfo = ({ os, size, color }: { os: OS[]; size: number; color: string }) => {
   return (
     <StyledGameOSContainer sx={{ display: "flex" }} disableGutters>
-      {os.includes("mac") && <StyledAppleIcon iconColor={color} iconSize={size} />}
-      {os.includes("windows") && <StyledWindowIcon iconColor={color} iconSize={size} />}
+      {os.includes("mac") && <StyledAppleIcon iconcolor={color} iconsize={size} />}
+      {os.includes("windows") && <StyledWindowIcon iconcolor={color} iconsize={size} />}
     </StyledGameOSContainer>
   )
 }

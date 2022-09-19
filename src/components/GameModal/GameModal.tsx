@@ -126,7 +126,7 @@ const GameModal = ({
           </StyledVideoBox>
           <StyledInfoBox>
             <StyledLiveGenreBox>
-              <LiveGameInfoText live={live} />
+              <LiveGameInfoText live={live ? true : false} />
               {genres.map((genre, index) => (
                 <GameGenreText key={index} genre={genre} fontWeight="bold" />
               ))}
