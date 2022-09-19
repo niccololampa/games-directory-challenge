@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Color from "color"
 import {
   Container,
@@ -267,10 +267,9 @@ const GameCard = ({
 }) => {
   const { gameName, image, live, shortDesc, genres, os, nfts, gif } = gameInfo
   const [cardHovered, setCardHovered] = useState(false)
-
-  let animation = ""
-  const cardMargin = "10px 5px"
-  const transition = ""
+  const [animation, setAnimation] = useState("")
+  const [cardMargin, setCardMargin] = useState<string>("10px 5px")
+  const [transition, setTransition] = useState<string>("")
 
   const handleMouseOver = () => {
     setCardHovered(true)
@@ -282,13 +281,13 @@ const GameCard = ({
     onHoverOut()
   }
 
-  // (index !== genre.length - 1 ? ", " : "")}
-
-  if (typeof locCardHovered === "number" && rowHovered && !cardHovered) {
-    animation = `${location < locCardHovered ? moveLeft : moveRight} 1s ease`
-    // cardMargin = "10px 5px"
-    // transition = "margin 1s ease"
-  }
+  useEffect(() => {
+    if (typeof locCardHovered === "number" && rowHovered && !cardHovered) {
+      setAnimation(`${location < locCardHovered ? moveLeft : moveRight} 1s ease`)
+      // cardMargin = "10px 5px"
+      // transition = "margin 1s ease"
+    }
+  })
 
   return (
     <>
