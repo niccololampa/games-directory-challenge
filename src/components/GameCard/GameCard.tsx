@@ -25,8 +25,6 @@ import type { GameInfo } from "../../types"
 const moveRight = keyframes`
 0% {
   transform: translateX(0%);
-  margin-left: 0;
-  margin-right: 0;
 },
 10% {
   transform: translateX(5%);
@@ -35,8 +33,9 @@ const moveRight = keyframes`
   transform: translateX(10%);
 },
 25% {
-  margin-left: 10px;
-  margin-right: 10px;
+  transform: translateX(12.5%);
+  margin-left: 7.5px;
+  margin-right: 7.5px;
 },
 30% {
   transform: translateX(15%);
@@ -52,10 +51,13 @@ const moveRight = keyframes`
 },
 70% {
   transform: translateX(15%);
+  margin-left: 0;
+  margin-right: 0;
 },
 75% {
-  margin-left: 0px;
-  margin-right: 0px;
+  transform: translateX(12.5%);
+  margin-left: 0;
+  margin-right: 0;
 },
 80% {
   transform: translateX(10%);
@@ -83,8 +85,9 @@ const moveLeft = keyframes`
   transform: translateX(-10%);
 },
 25% {
-  margin-left: 10px;
-  margin-right: 10px;
+  transform: translateX(-12.5%);
+  margin-left: 7.5px;
+  margin-right: 7.5px;
 },
 30% {
   transform: translateX(-15%);
@@ -100,10 +103,13 @@ const moveLeft = keyframes`
 },
 70% {
   transform: translateX(-15%);
+  margin-left: 0;
+  margin-right: 0;
 },
 75% {
-  margin-left: 0px;
-  margin-right: 0px;
+  transform: translateX(-12.5%);
+  margin-left: 0;
+  margin-right: 0;
 },
 80% {
   transform: translateX(-10%);
@@ -183,8 +189,9 @@ const StyledCardActionArea = styled(CardActionArea)(
       minWidth: "200px",
       "&:hover": {
         transform: "scale(1.1)",
-        animation: `${popOutandIn} 0.6s ease`,
+        animation: `${popOutandIn} 1s ease`,
         margin: "10px 30px",
+        transition: "margin 1s linear",
         outline: "none",
         boxShadow: "0 0 30px  #a4d3f1",
       },
@@ -262,8 +269,8 @@ const GameCard = ({
   const [cardHovered, setCardHovered] = useState(false)
 
   let animation = ""
-  let cardMargin = "10px 5px"
-  let transition = ""
+  const cardMargin = "10px 5px"
+  const transition = ""
 
   const handleCardClick = () => {
     setModalVisible(true)
@@ -286,9 +293,9 @@ const GameCard = ({
   // (index !== genre.length - 1 ? ", " : "")}
 
   if (typeof locCardHovered === "number" && rowHovered && !cardHovered) {
-    animation = `${location < locCardHovered ? moveLeft : moveRight} 0.6s ease-out`
-    cardMargin = "10px 5px"
-    transition = "margin 1s ease"
+    animation = `${location < locCardHovered ? moveLeft : moveRight} 1s ease`
+    // cardMargin = "10px 5px"
+    // transition = "margin 1s ease"
   }
 
   return (

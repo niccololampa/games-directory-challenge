@@ -22,6 +22,7 @@ const GameDisplayRow = ({ row }: { row: GameInfo[] }) => {
     return {
       display: "flex",
       justifyContent: "center",
+      alignItems: "center",
       alignContent: "space-around",
       // columnGap: rowHovered ? "0px" : "initial",
     }
