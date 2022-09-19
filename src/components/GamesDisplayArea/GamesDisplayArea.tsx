@@ -1,15 +1,26 @@
-import React from "react"
+import React, { useState } from "react"
 import { styled } from "@mui/material/styles"
 import { Container } from "@mui/material"
-import { GameDisplayRow } from "../../components"
+import { GameDisplayRow, GameModal } from "../../components"
 import type { GameInfo } from "../../types"
 
 const GamesDisplayArea = ({ gamesDisplayed }: { gamesDisplayed: GameInfo[] }) => {
   const gamesPerRow = 5
+  const [modalVisible, setModalVisible] = useState(false)
+  const [gameModal, setGameModal] = useState<GameInfo>({} as GameInfo)
   const numOfGames = gamesDisplayed.length
   const numRows = Math.floor(numOfGames / gamesPerRow)
   const remGames = numOfGames % gamesPerRow
 
+  const handleCardClick = (game: GameInfo) => {
+    setGameModal(game)
+    setModalVisible(true)
+  }
+
+  const handleModalClose = () => {
+    setGameModal({} as GameInfo)
+    setModalVisible(false)
+  }
   const gamesRowArranged = () => {
     const rows: GameInfo[][] = []
 
@@ -29,8 +40,15 @@ const GamesDisplayArea = ({ gamesDisplayed }: { gamesDisplayed: GameInfo[] }) =>
   return (
     <div>
       {gamesRowArranged().map((row, index) => (
-        <GameDisplayRow row={row} key={index} />
+        <GameDisplayRow
+          row={row}
+          key={index}
+          handleCardClick={(game: GameInfo) => handleCardClick(game)}
+        />
       ))}
+      {gameModal && (
+        <GameModal visible={modalVisible} gameInfo={gameModal} handleClose={handleModalClose} />
+      )}
     </div>
   )
 }

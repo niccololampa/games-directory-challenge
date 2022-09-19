@@ -13,7 +13,6 @@ import { styled } from "@mui/material/styles"
 import { keyframes } from "@mui/system"
 
 import {
-  GameModal,
   LiveGameInfoText,
   GameGenreText,
   GameNameText,
@@ -253,6 +252,7 @@ const GameCard = ({
   rowHovered,
   location,
   locCardHovered,
+  handleCardClick,
 }: {
   color: string
   colorHoverContent?: string
@@ -263,23 +263,14 @@ const GameCard = ({
   rowHovered: boolean
   location: number
   locCardHovered: number | undefined
+  handleCardClick: () => void
 }) => {
   const { gameName, image, live, shortDesc, genres, os, nfts, gif } = gameInfo
-  const [modalVisible, setModalVisible] = useState(false)
   const [cardHovered, setCardHovered] = useState(false)
 
   let animation = ""
   const cardMargin = "10px 5px"
   const transition = ""
-
-  const handleCardClick = () => {
-    console.log("click")
-    setModalVisible(true)
-  }
-
-  const handleModalClose = () => {
-    setModalVisible(false)
-  }
 
   const handleMouseOver = () => {
     setCardHovered(true)
@@ -339,8 +330,6 @@ const GameCard = ({
           </StyledCardContent>
         </StyledCard>
       </StyledCardActionArea>
-
-      <GameModal visible={modalVisible} gameInfo={gameInfo} handleClose={handleModalClose} />
     </>
   )
 }

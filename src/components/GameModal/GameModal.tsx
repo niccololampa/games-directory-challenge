@@ -100,6 +100,10 @@ const GameModal = ({
     navigate(id)
   }
 
+  if (!visible) {
+    return <></>
+  }
+
   return (
     <Modal
       open={visible}
