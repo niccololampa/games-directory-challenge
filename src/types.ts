@@ -32,7 +32,7 @@ export interface GamePost {
   id: string
   user: GameUser
   post: string
-  date: Date
+  date: string
   image: string
 }
 

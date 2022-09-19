@@ -28,3 +28,4 @@ export { default as GameProfileImage } from "./GameProfileImage/GameProfileImage
 export { default as SocialShareButtons } from "./SocialShareButtons/SocialShareButtons"
 export { default as GameUpdateCard } from "./GameUpdateCard/GameUpdateCard"
 export { default as GameDisplayRow } from "./GameDisplayRow/GameDisplayRow"
+export { default as GamePostCard } from "./GamePostCard/GamePostCard"

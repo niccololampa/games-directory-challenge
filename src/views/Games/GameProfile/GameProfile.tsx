@@ -16,6 +16,7 @@ import {
   ColoredButton,
   SocialShareButtons,
   GameUpdateCard,
+  GamePostCard,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
 import type { GameInfo, GameFilter, GameUpdate } from "../../../types"
@@ -200,6 +201,10 @@ const GameProfile = () => {
             borderwidth="1px"
           />
         </Stack>
+
+        {gameDetails.relatedPosts.map((post, index) => (
+          <GamePostCard key={index} post={post} />
+        ))}
         <PageHeader2 title="Others that like this game" />
       </Container>
     </div>
