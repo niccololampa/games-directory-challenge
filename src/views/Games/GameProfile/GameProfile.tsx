@@ -45,6 +45,10 @@ const StyledUpdateBox = styled(Box)({
   display: "flex",
 })
 
+const StyledContainer = styled(Container)({
+  marginTop: "25px",
+})
+
 const GameProfile = () => {
   const numDispUpdates = 3
   const { id } = useParams()
@@ -206,8 +210,10 @@ const GameProfile = () => {
         {gameDetails.relatedPosts.map((post, index) => (
           <GamePostCard key={index} post={post} />
         ))}
-        <PageHeader2 title="Others that like this game" />
-        <GameUserLikes users={gameDetails.userLikes} />
+        <StyledContainer disableGutters maxWidth={false}>
+          <PageHeader2 title="Others that like this game" />
+          <GameUserLikes users={gameDetails.userLikes} />
+        </StyledContainer>
       </Container>
     </div>
   )
