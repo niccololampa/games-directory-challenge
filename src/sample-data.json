@@ -75,13 +75,6 @@
         "date": "2022-09-01T13:37:27+00:00",
         "title": "New Hot Update",
         "summary": "yes we have updated bug and the app is 100% bug free"
-      },
-      {
-        "id": "1",
-        "image": "/sample-game-image.png",
-        "date": "2022-09-01T13:37:27+00:00",
-        "title": "New Hot Update",
-        "summary": "yes we have updated bug and the app is 100% bug free"
       }
     ],
     "relatedPosts": [
@@ -114,12 +107,30 @@
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" },
-      { "userName": "Nathan", "userImage": "user-sample-image.jpg" }
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
     "updates": [
@@ -129,9 +140,48 @@
         "date": "2022-09-01T13:37:27+00:00",
         "title": "New Hot Update",
         "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
       }
     ],
-    "relatedPosts": [],
+    "relatedPosts": [
+      {
+        "id": "1a",
+        "user": {
+          "userName": "test",
+          "userImage": "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png"
+        },
+        "post": "sldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfj",
+        "date": "2022-09-01T13:37:27+00:00",
+        "image": "/sample-game-image.png"
+      }
+    ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
     "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
   },
@@ -150,15 +200,81 @@
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" }
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
-    "relatedPosts": [],
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
+    ],
+    "relatedPosts": [
+      {
+        "id": "1a",
+        "user": {
+          "userName": "test",
+          "userImage": "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png"
+        },
+        "post": "sldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfj",
+        "date": "2022-09-01T13:37:27+00:00",
+        "image": "/sample-game-image.png"
+      }
+    ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
     "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
   },
@@ -177,15 +293,81 @@
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" }
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
-    "relatedPosts": [],
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
+    ],
+    "relatedPosts": [
+      {
+        "id": "1a",
+        "user": {
+          "userName": "test",
+          "userImage": "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png"
+        },
+        "post": "sldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfj",
+        "date": "2022-09-01T13:37:27+00:00",
+        "image": "/sample-game-image.png"
+      }
+    ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
     "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
   },
@@ -204,15 +386,81 @@
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" }
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
-    "relatedPosts": [],
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
+    ],
+    "relatedPosts": [
+      {
+        "id": "1a",
+        "user": {
+          "userName": "test",
+          "userImage": "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png"
+        },
+        "post": "sldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfj",
+        "date": "2022-09-01T13:37:27+00:00",
+        "image": "/sample-game-image.png"
+      }
+    ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
     "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
   },
@@ -231,15 +479,81 @@
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" }
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
-    "relatedPosts": [],
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
+    ],
+    "relatedPosts": [
+      {
+        "id": "1a",
+        "user": {
+          "userName": "test",
+          "userImage": "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png"
+        },
+        "post": "sldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfj",
+        "date": "2022-09-01T13:37:27+00:00",
+        "image": "/sample-game-image.png"
+      }
+    ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
     "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
   },
@@ -259,15 +573,81 @@
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" }
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
-    "relatedPosts": [],
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
+    ],
+    "relatedPosts": [
+      {
+        "id": "1a",
+        "user": {
+          "userName": "test",
+          "userImage": "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png"
+        },
+        "post": "sldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfj",
+        "date": "2022-09-01T13:37:27+00:00",
+        "image": "/sample-game-image.png"
+      }
+    ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
     "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
   },
@@ -286,15 +666,81 @@
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" }
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
-    "relatedPosts": [],
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
+    ],
+    "relatedPosts": [
+      {
+        "id": "1a",
+        "user": {
+          "userName": "test",
+          "userImage": "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png"
+        },
+        "post": "sldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfj",
+        "date": "2022-09-01T13:37:27+00:00",
+        "image": "/sample-game-image.png"
+      }
+    ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
     "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
   },
@@ -313,16 +759,69 @@
     "claimed": false,
     "publisher": "steady",
     "protocol": "does",
-    "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" }
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
     ],
-    "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
-    "relatedPosts": [],
+    "userLikes": [
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
+    ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
     "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
   },
@@ -342,15 +841,81 @@
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" }
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
-    "updates": [],
-    "relatedPosts": [],
+    "updates": [
+      {
+        "id": "1",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "2",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "3",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "4",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      },
+      {
+        "id": "5",
+        "image": "/sample-game-image.png",
+        "date": "2022-09-01T13:37:27+00:00",
+        "title": "New Hot Update",
+        "summary": "yes we have updated bug and the app is 100% bug free"
+      }
+    ],
+    "relatedPosts": [
+      {
+        "id": "1a",
+        "user": {
+          "userName": "test",
+          "userImage": "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png"
+        },
+        "post": "sldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfjsldfjsfjlsfjlsjfljsljfAsladfjdksfjlsfjlsdjflsdjflsdjflsdjflasjfljsdlfjslfjlsjflasfjklsdjflsjflsdjflsjflsjflsjfljslfjlsfjlsdfjlasfjlsdjlsdfjlasfjlsfj",
+        "date": "2022-09-01T13:37:27+00:00",
+        "image": "/sample-game-image.png"
+      }
+    ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
     "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
   }

@@ -50,7 +50,7 @@ const StyledContainer = styled(Container)({
 })
 
 const GameProfile = () => {
-  const numDispUpdates = 3
+  const numDispUpdates = 4
   const { id } = useParams()
   const [gameDetails, setGameDetails] = useState<GameInfo>()
 
