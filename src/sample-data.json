@@ -14,12 +14,30 @@
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
-      { "userName": "John", "userImage": "user-sample-image.jpg" },
-      { "userName": "Mark", "userImage": "user-sample-image.jpg" },
-      { "userName": "Lukas", "userImage": "user-sample-image.jpg" },
-      { "userName": "Raul", "userImage": "user-sample-image.jpg" },
-      { "userName": "George", "userImage": "user-sample-image.jpg" },
-      { "userName": "Nathan", "userImage": "user-sample-image.jpg" }
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "John",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Mark",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Raul",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Test",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      },
+      {
+        "userName": "Howard",
+        "userImage": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+      }
     ],
     "trailerLink": "https://www.youtube.com/watch?v=X2z_YIeettE",
     "updates": [

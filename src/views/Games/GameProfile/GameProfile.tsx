@@ -17,6 +17,7 @@ import {
   SocialShareButtons,
   GameUpdateCard,
   GamePostCard,
+  GameUserLikes,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
 import type { GameInfo, GameFilter, GameUpdate } from "../../../types"
@@ -206,6 +207,7 @@ const GameProfile = () => {
           <GamePostCard key={index} post={post} />
         ))}
         <PageHeader2 title="Others that like this game" />
+        <GameUserLikes users={gameDetails.userLikes} />
       </Container>
     </div>
   )

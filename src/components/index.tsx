@@ -29,3 +29,4 @@ export { default as SocialShareButtons } from "./SocialShareButtons/SocialShareB
 export { default as GameUpdateCard } from "./GameUpdateCard/GameUpdateCard"
 export { default as GameDisplayRow } from "./GameDisplayRow/GameDisplayRow"
 export { default as GamePostCard } from "./GamePostCard/GamePostCard"
+export { default as GameUserLikes } from "./GameUserLikes/GameUserLikes"
