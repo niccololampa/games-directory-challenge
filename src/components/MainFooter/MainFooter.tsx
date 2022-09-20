@@ -1,5 +1,4 @@
 import React from "react"
-import { Box, Container, Typography } from "@mui/material"
 import { HRBorder, PageLinks, SocialMediaLinks, EarnAllianceLogo } from "../../components"
 import {
   StyledFooterContainer,
