@@ -1,47 +1,35 @@
 import React from "react"
 import { Box, Container, Typography } from "@mui/material"
 import { HRBorder, PageLinks, SocialMediaLinks, EarnAllianceLogo } from "../../components"
-import earnAllianceLogo from "../../earn-alliance-logo-sample.png"
+import {
+  StyledFooterContainer,
+  StyledTopSectionContainer,
+  StyledLogoContainer,
+  StyledLinkBox,
+  StyledBottomSectionContainer,
+  StyledCopyrightTypo,
+} from "./MainFooterStyled"
 
 const MainFooter = ({ pages }: { pages: string[] }) => {
   const footerPages = ["Privacy Policy", "Terms of Use", "Cookies Policy"]
 
   return (
-    <Container maxWidth={false} sx={{ marginTop: "80px" }}>
+    <StyledFooterContainer maxWidth={false}>
       <HRBorder />
-
-      <Container sx={{ display: "flex", marginTop: 5 }} disableGutters maxWidth="xl">
-        <Container disableGutters sx={{ flexGrow: 1 }}>
+      <StyledTopSectionContainer disableGutters maxWidth="xl">
+        <StyledLogoContainer disableGutters>
           <EarnAllianceLogo width="250px" height="139px" />
-        </Container>
-
-        <Box sx={{ flexGrow: 1, display: "flex" }}>
+        </StyledLogoContainer>
+        <StyledLinkBox>
           <PageLinks pages={pages} />
           <SocialMediaLinks />
-        </Box>
-      </Container>
-
-      <Container
-        sx={{
-          display: "flex",
-
-          alignItems: "center",
-        }}
-        disableGutters
-        maxWidth="xl"
-      >
-        <Typography
-          sx={{
-            color: "#768085",
-            alignItems: "center",
-            flexGrow: 1,
-          }}
-        >
-          All Rights Reserved 2022 Earn Alliance
-        </Typography>
+        </StyledLinkBox>
+      </StyledTopSectionContainer>
+      <StyledBottomSectionContainer disableGutters maxWidth="xl">
+        <StyledCopyrightTypo>All Rights Reserved 2022 Earn Alliance</StyledCopyrightTypo>
         <PageLinks pages={footerPages} />
-      </Container>
-    </Container>
+      </StyledBottomSectionContainer>
+    </StyledFooterContainer>
   )
 }
 
