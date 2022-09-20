@@ -1,27 +1,6 @@
 import React from "react"
-import { Box, Typography, Stack } from "@mui/material"
-import { styled } from "@mui/material/styles"
-
-const StyledBox = styled(Box)({
-  backgroundColor: "#282828",
-  borderRadius: "4%",
-  width: "200px",
-  height: "30px",
-  padding: "20px",
-})
-
-const StyledLabel = styled(Typography)({
-  color: "#7f7f7f",
-  fontSize: "10px",
-  textTransform: "uppercase",
-})
-
-const StyledValue = styled(Typography)({
-  color: "#fff",
-  fontSize: "14px",
-  fontWeight: "bold",
-  textTransform: "uppercase",
-})
+import { Stack } from "@mui/material"
+import { StyledBox, StyledLabel, StyledValue } from "./GameProfileInfoBoxStyled"
 
 const GameProfileInfoBox = ({
   label,
