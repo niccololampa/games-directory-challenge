@@ -15,7 +15,7 @@ const HighlightBox = ({
   status: boolean
 }) => {
   return (
-    <StyledHighlightBox status={status} colorNeg={colorNeg} colorPos={colorPos}>
+    <StyledHighlightBox status={status} colorneg={colorNeg} colorpos={colorPos}>
       <StyledText>{status ? textPos : textNeg}</StyledText>
     </StyledHighlightBox>
   )

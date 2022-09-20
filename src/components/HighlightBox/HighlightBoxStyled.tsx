@@ -2,8 +2,8 @@ import { Box, Typography } from "@mui/material"
 import { styled } from "@mui/material/styles"
 
 export const StyledHighlightBox = styled(Box)(
-  ({ status, colorNeg, colorPos }: { status: boolean; colorNeg: string; colorPos: string }) => ({
-    backgroundColor: status ? colorPos : colorNeg,
+  ({ status, colorneg, colorpos }: { status: boolean; colorneg: string; colorpos: string }) => ({
+    backgroundColor: status ? colorpos : colorneg,
     borderRadius: "5%",
     height: "30px",
     minWidth: "fit-content",
