@@ -6,21 +6,26 @@ import { Container } from "@mui/material"
 
 const GameDisplayRow = ({
   row,
+  rowHovered = false,
   handleCardClick,
+  handleRowHover,
+  handleRowHoverOut,
 }: {
   row: GameInfo[]
+  rowHovered: boolean
   handleCardClick: (game: GameInfo) => void
+  handleRowHover: () => void
+  handleRowHoverOut: () => void
 }) => {
-  const [rowHovered, setRowHovered] = useState(false)
   const [locCardHovered, setLocCardHovered] = useState<number | undefined>()
 
   const onHover = (index: number) => {
-    setRowHovered(true)
+    handleRowHover()
     setLocCardHovered(index)
   }
 
   const onHoverOut = () => {
-    setRowHovered(false)
+    handleRowHoverOut()
     setLocCardHovered(undefined)
   }
 

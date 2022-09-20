@@ -26,7 +26,6 @@ import {
 
 import type { GameInfo } from "../../types"
 
-// can't use styled due to "position" key typing error.
 const GameModal = ({
   visible,
   gameInfo,
