@@ -1,20 +1,10 @@
 import React from "react"
 import { Twitter, Facebook, YouTube } from "@mui/icons-material"
-import { styled } from "@mui/material/styles"
 import { ReactComponent as DiscordLogo } from "../../discord.svg"
 import { ReactComponent as MediumLogo } from "../../medium.svg"
 import { ReactComponent as TelegramLogo } from "../../telegram.svg"
-import { IconButton, ButtonProps } from "@mui/material"
-
-const StyledIconButton = styled(IconButton)(() => ({
-  border: "1px solid #6b6b6b",
-  borderRadius: "20%",
-  padding: 2,
-  backgroundColor: "#6b6b6b",
-  "&:hover": {
-    backgroundColor: "#6b6b6b",
-  },
-}))
+import { ButtonProps } from "@mui/material"
+import { StyledIconButton } from "./SocialShareButtonsStyled"
 
 const SocialShareBoxButton = ({
   fillColor,
