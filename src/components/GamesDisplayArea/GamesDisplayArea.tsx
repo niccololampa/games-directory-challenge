@@ -12,8 +12,6 @@ const GamesDisplayArea = ({ gamesDisplayed }: { gamesDisplayed: GameInfo[] }) =>
   const handleCardClick = (game: GameInfo) => {
     setGameModal(game)
     setModalVisible(true)
-    // will set rowHovered condition for the clicked row to false. So animation doesn't trigger upon click.
-    setRowHoveredIndex(undefined)
   }
 
   const handleModalClose = () => {
