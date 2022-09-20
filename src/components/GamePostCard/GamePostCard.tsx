@@ -44,7 +44,6 @@ const StyledInfoStack = styled(Stack)(() => ({
   width: "100%",
   overflow: "hidden",
   textOverflow: "ellipsis",
-  // whiteSpace: "nowrap",
 }))
 
 const GamePostCard = ({ post }: { post: GamePost }) => {

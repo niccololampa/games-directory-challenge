@@ -41,7 +41,6 @@ const StyledProfileImageContainer = styled(Container)({
 
 const StyledUpdateStack = styled(Stack)({
   height: "500px",
-  // width: "100%",
   minWidth: "75%",
   marginTop: "25px",
   justifyContent: "center",

@@ -202,9 +202,6 @@ const StyledCard = styled(Card)(
   ({ color, colorHover }: { color: string; colorHover?: string }) => ({
     borderRadius: 0,
     boxShadow: "none",
-    "&:hover": {
-      // boxShadow: `0 6px 12px 0 ${Color(color).rotate(-12).darken(0.2).fade(0.5)}`,
-    },
   }),
 )
 
