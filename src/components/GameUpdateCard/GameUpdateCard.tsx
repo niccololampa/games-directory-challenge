@@ -12,8 +12,8 @@ const StyledUpdateBox = styled(Box)(() => ({
   display: "flex",
   alignItems: "center",
   flexDirection: "column",
-  width: "250px",
-  height: "400px",
+  width: "200px",
+  height: "380px",
   padding: 30,
 }))
 

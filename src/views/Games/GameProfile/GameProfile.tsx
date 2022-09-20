@@ -40,8 +40,9 @@ const StyledProfileImageContainer = styled(Container)({
 
 const StyledUpdateBox = styled(Box)({
   height: "500px",
+  width: "100%",
   marginTop: "25px",
-  // justifyContent: "center",
+  justifyContent: "center",
   display: "flex",
 })
 
@@ -54,7 +55,7 @@ const StyledRelPostStack = styled(Stack)({
 })
 
 const GameProfile = () => {
-  const numDispUpdates = 4
+  const numDispUpdates = 5
   const { id } = useParams()
   const [gameDetails, setGameDetails] = useState<GameInfo>()
 
