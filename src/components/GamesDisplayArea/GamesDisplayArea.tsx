@@ -1,6 +1,4 @@
 import React, { useState } from "react"
-import { styled } from "@mui/material/styles"
-import { Container } from "@mui/material"
 import { GameDisplayRow, GameModal } from "../../components"
 import type { GameInfo } from "../../types"
 
@@ -9,8 +7,6 @@ const GamesDisplayArea = ({ gamesDisplayed }: { gamesDisplayed: GameInfo[] }) =>
   const [modalVisible, setModalVisible] = useState(false)
   const [gameModal, setGameModal] = useState<GameInfo>({} as GameInfo)
   const numOfGames = gamesDisplayed.length
-  const numRows = Math.floor(numOfGames / gamesPerRow)
-  const remGames = numOfGames % gamesPerRow
 
   const handleCardClick = (game: GameInfo) => {
     setGameModal(game)
@@ -29,13 +25,6 @@ const GamesDisplayArea = ({ gamesDisplayed }: { gamesDisplayed: GameInfo[] }) =>
     }
     return rows
   }
-
-  const StyledContainerRow = styled(Container)(() => {
-    return {
-      display: "flex",
-      alignContent: "space-around",
-    }
-  })
 
   return (
     <div>
