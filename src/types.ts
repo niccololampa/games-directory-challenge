@@ -16,8 +16,16 @@ export interface GameInfo {
   trailerLink: string
   updates: GameUpdate[]
   relatedPosts: GamePost[]
+  slideShowImages: SlideShowImage[]
   coverPhoto: string
   gif?: string
+}
+
+export interface SlideShowImage {
+  original: string
+  originalHeight: number
+  thumbnail: string
+  thumbnailHeight: number
 }
 
 export interface GameUpdate {

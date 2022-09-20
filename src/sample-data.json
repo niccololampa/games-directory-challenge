@@ -90,7 +90,30 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   },
   {
     "id": "2",
@@ -183,7 +206,30 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   },
   {
     "id": "3",
@@ -276,7 +322,30 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   },
   {
     "id": "4",
@@ -369,7 +438,30 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   },
   {
     "id": "5",
@@ -462,7 +554,30 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   },
   {
     "id": "6",
@@ -555,7 +670,30 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   },
 
   {
@@ -649,7 +787,30 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   },
   {
     "id": "8",
@@ -742,7 +903,30 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   },
   {
     "id": "9",
@@ -823,7 +1007,30 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   },
   {
     "id": "10",
@@ -917,6 +1124,29 @@
       }
     ],
     "coverPhoto": "/images/slide-show-image-1.jpg",
-    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif"
+    "gif": "https://c.tenor.com/J9T0ATgXqTsAAAAd/fkcrit.gif",
+    "slideShowImages": [
+      {
+        "original": "images/slide-show-image-1.jpg",
+        "thumbnail": "images/slide-show-image-1.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-2.jpg",
+
+        "thumbnail": "images/slide-show-image-2.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      },
+
+      {
+        "original": "images/slide-show-image-3.jpg",
+        "thumbnail": "images/slide-show-image-3.jpg",
+        "originalHeight": 250,
+        "thumbnailHeight": 50
+      }
+    ]
   }
 ]

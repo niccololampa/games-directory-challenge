@@ -93,7 +93,7 @@ const GameModal = ({
   gameInfo: GameInfo
   handleClose: () => void
 }) => {
-  const { id, gameName, live, shortDesc, genres, videoThumb, os, nfts } = gameInfo
+  const { id, gameName, live, shortDesc, genres, videoThumb, os, nfts, slideShowImages } = gameInfo
   const navigate = useNavigate()
 
   const handleLearnMore = () => {
@@ -122,7 +122,7 @@ const GameModal = ({
           <StyledSlideShowBox>
             {nfts && <NFTSDisplay />}
             <GameOSInfo os={os} size={20} color="#fff" />
-            <ImageCarousel />
+            <ImageCarousel images={slideShowImages} />
           </StyledSlideShowBox>
           <StyledVideoBox backgroundimage={videoThumb}>
             <StyledPlayArrowIcon />
