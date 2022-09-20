@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import Color from "color"
 import {
   Container,
   Typography,
@@ -10,7 +9,6 @@ import {
   Box,
 } from "@mui/material"
 import { styled } from "@mui/material/styles"
-import { keyframes } from "@mui/system"
 
 import {
   LiveGameInfoText,
