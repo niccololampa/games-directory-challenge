@@ -10,7 +10,7 @@
     "videoThumb": "/sample-video-thumbnail.jpg",
     "os": ["windows"],
     "nfts": false,
-    "claimed": false,
+    "claimed": true,
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
@@ -242,7 +242,7 @@
     "videoThumb": "/sample-video-thumbnail.jpg",
     "os": ["mac", "windows"],
     "nfts": false,
-    "claimed": false,
+    "claimed": true,
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
@@ -474,7 +474,7 @@
     "videoThumb": "/sample-video-thumbnail.jpg",
     "os": ["mac", "windows"],
     "nfts": true,
-    "claimed": false,
+    "claimed": true,
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
@@ -707,7 +707,7 @@
     "videoThumb": "/sample-video-thumbnail.jpg",
     "os": ["windows"],
     "nfts": false,
-    "claimed": false,
+    "claimed": true,
     "publisher": "steady",
     "protocol": "does",
     "userLikes": [
@@ -940,7 +940,7 @@
     "videoThumb": "/sample-video-thumbnail.jpg",
     "os": ["mac", "windows"],
     "nfts": false,
-    "claimed": false,
+    "claimed": true,
     "publisher": "steady",
     "protocol": "does",
     "updates": [
