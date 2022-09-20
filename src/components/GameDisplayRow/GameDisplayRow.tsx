@@ -36,21 +36,19 @@ const GameDisplayRow = ({
   return (
     <StyledContainerRow maxWidth="xl">
       {row.map((game, index) => (
-        <>
-          <GameCard
-            key={index}
-            gameInfo={game}
-            color="#2e4857"
-            colorHoverContent="#1e2c35"
-            handleCardClick={() => handleCardClick(game)}
-            width={256}
-            onHover={() => onHover(index)}
-            onHoverOut={onHoverOut}
-            rowHovered={rowHovered}
-            location={index}
-            locCardHovered={locCardHovered}
-          />
-        </>
+        <GameCard
+          key={index}
+          gameInfo={game}
+          color="#2e4857"
+          colorHoverContent="#1e2c35"
+          handleCardClick={() => handleCardClick(game)}
+          width={256}
+          onHover={() => onHover(index)}
+          onHoverOut={onHoverOut}
+          rowHovered={rowHovered}
+          location={index}
+          locCardHovered={locCardHovered}
+        />
       ))}
     </StyledContainerRow>
   )
