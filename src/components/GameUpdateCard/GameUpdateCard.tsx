@@ -13,6 +13,7 @@ const StyledUpdateBox = styled(Box)(() => ({
   alignItems: "center",
   flexDirection: "column",
   width: "200px",
+  minWidth: "100px",
   height: "380px",
   padding: 30,
 }))
@@ -37,11 +38,18 @@ const StyledTitleText = styled(Box)(() => ({
   fontWeight: "bold",
 }))
 
-const StyledSummaryText = styled(Box)(() => ({
-  color: "#fff",
+const StyledSummaryBox = styled(Box)(() => ({
+  maxWidth: "100%",
   marginTop: "10px",
   fontSize: "15px",
   height: "150px",
+  overflow: "hidden",
+}))
+
+const StyledSummaryText = styled(Typography)(() => ({
+  maxWidth: "100%",
+  wordWrap: "break-word",
+  color: "#fff",
 }))
 
 const GameUpdateCard = ({ update }: { update: GameUpdate }) => {
@@ -54,7 +62,9 @@ const GameUpdateCard = ({ update }: { update: GameUpdate }) => {
       <StyledDateText>{moment(date).format("DD MMMM YYYY")}</StyledDateText>
       <StyledTitleText>{title}</StyledTitleText>
 
-      <StyledSummaryText>{summary}</StyledSummaryText>
+      <StyledSummaryBox>
+        <StyledSummaryText>{summary}</StyledSummaryText>
+      </StyledSummaryBox>
       <ColoredButton
         text="Read More"
         handleClick={() => {

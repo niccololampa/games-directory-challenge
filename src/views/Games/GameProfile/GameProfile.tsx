@@ -39,9 +39,10 @@ const StyledProfileImageContainer = styled(Container)({
   top: "-200px",
 })
 
-const StyledUpdateBox = styled(Box)({
+const StyledUpdateStack = styled(Stack)({
   height: "500px",
-  width: "100%",
+  // width: "100%",
+  minWidth: "75%",
   marginTop: "25px",
   justifyContent: "center",
   display: "flex",
@@ -190,13 +191,11 @@ const GameProfile = () => {
 
         <StyledContainer disableGutters maxWidth={false}>
           <PageHeader2 title="Latest Updates" />
-          <StyledUpdateBox>
-            <Stack direction="row" spacing={1} marginBottom={2}>
-              {gameUpdates(gameDetails.updates).map((update, index) => (
-                <GameUpdateCard key={index} update={update} />
-              ))}
-            </Stack>
-          </StyledUpdateBox>
+          <StyledUpdateStack direction="row" spacing={1} marginBottom={2}>
+            {gameUpdates(gameDetails.updates).map((update, index) => (
+              <GameUpdateCard key={index} update={update} />
+            ))}
+          </StyledUpdateStack>
         </StyledContainer>
         <StyledRelPostStack direction="row" spacing={1} marginBottom={2}>
           <PageHeader2 title="Related Posts" />
