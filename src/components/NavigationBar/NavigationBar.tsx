@@ -16,6 +16,12 @@ import MenuIcon from "@mui/icons-material/Menu"
 import HRBorder from "../HRBorder/HRBorder"
 import "./NavigationBar.css"
 import earnAllianceLogo from "../../earn-alliance-logo.png"
+import {
+  StyledAppBar,
+  StyledLogoContainer,
+  StyledIconButton,
+  StyledMenu,
+} from "./NavigationBarStyled"
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
 
@@ -39,12 +45,8 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
   }
 
   return (
-    <div>
-      <AppBar
-        position="static"
-        className="app-bar"
-        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
-      >
+    <>
+      <StyledAppBar position="static" className="app-bar">
         <Container maxWidth={false}>
           <Toolbar disableGutters>
             <Box
@@ -97,11 +99,9 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
               </Menu>
             </Box>
 
-            <Container
+            <StyledLogoContainer
               sx={{
                 display: { xs: "flex", md: "none" },
-                flexGrow: 1,
-                justifyContent: "center",
               }}
             >
               <Box
@@ -114,7 +114,7 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
                 alt="Earn Allaince Logo"
                 src={earnAllianceLogo}
               />
-            </Container>
+            </StyledLogoContainer>
             <Box
               sx={{
                 flexGrow: 1,
@@ -128,12 +128,11 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
 
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <StyledIconButton onClick={handleOpenUserMenu}>
                   <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                </IconButton>
+                </StyledIconButton>
               </Tooltip>
-              <Menu
-                sx={{ mt: "45px" }}
+              <StyledMenu
                 id="menu-appbar"
                 anchorEl={anchorElUser}
                 anchorOrigin={{
@@ -153,13 +152,13 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
                     <Typography textAlign="center">{setting}</Typography>
                   </MenuItem>
                 ))}
-              </Menu>
+              </StyledMenu>
             </Box>
           </Toolbar>
         </Container>
-      </AppBar>
+      </StyledAppBar>
       <HRBorder />
-    </div>
+    </>
   )
 }
 export default NavigationBar
