@@ -140,8 +140,6 @@ const GameCard = ({
   useEffect(() => {
     if (typeof locCardHovered === "number" && rowHovered && !cardHovered) {
       setAnimation(`${location < locCardHovered ? moveLeft : moveRight} 1s ease`)
-      // cardMargin = "10px 5px"
-      // transition = "margin 1s ease"
     }
   })
 
