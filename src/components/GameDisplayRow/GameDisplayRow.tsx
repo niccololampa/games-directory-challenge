@@ -24,6 +24,7 @@ const GameDisplayRow = ({
     setLocCardHovered(undefined)
   }
 
+  // FIXME: If imported via styled file causing problems in animation
   const StyledContainerRow = styled(Container)(() => {
     return {
       display: "flex",
