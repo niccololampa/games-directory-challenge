@@ -31,6 +31,7 @@ const getGameDetails = (id: string) => {
 const StyledImageBox = styled(Box)({
   backgroundColor: "#3f3f3f",
   borderRadius: "5%",
+  marginBottom: "100px",
 })
 
 const StyledProfileImageContainer = styled(Container)({
@@ -86,15 +87,21 @@ const GameProfile = () => {
   }
 
   return (
-    <div>
+    <>
       <StyledImageBox>
         <GameCoverPhoto coverPhoto={gameDetails.coverPhoto} width="100%" height="400px" />
       </StyledImageBox>
-      <Container maxWidth="xl" sx={{ marginTop: "100px", position: "relative" }}>
+      <Container maxWidth="xl" sx={{ marginBottom: "120px", position: "relative" }}>
         <StyledProfileImageContainer maxWidth="xl" disableGutters>
           <GameProfileImage image={gameDetails.image} width="200px" height="200px" />
         </StyledProfileImageContainer>
-        <LiveGameInfoText live={gameDetails.live ? true : false} />
+      </Container>
+
+      <Container maxWidth="xl" sx={{ marginTop: "100px", position: "relative" }}>
+        <StyledContainer disableGutters maxWidth={false}></StyledContainer>
+        <StyledContainer disableGutters maxWidth={false}>
+          <LiveGameInfoText live={gameDetails.live ? true : false} />
+        </StyledContainer>
         <PageHeader1 title={gameDetails.gameName} />
         <Stack direction="row" spacing={2} marginBottom={2}>
           <HighlightBox
@@ -229,7 +236,7 @@ const GameProfile = () => {
           <GameUserLikes users={gameDetails.userLikes} />
         </StyledContainer>
       </Container>
-    </div>
+    </>
   )
 }
 
