@@ -49,6 +49,10 @@ const StyledContainer = styled(Container)({
   marginTop: "25px",
 })
 
+const StyledRelPostStack = styled(Stack)({
+  alignItems: "center",
+})
+
 const GameProfile = () => {
   const numDispUpdates = 4
   const { id } = useParams()
@@ -177,7 +181,7 @@ const GameProfile = () => {
           </Stack>
         </StyledUpdateBox>
 
-        <Stack direction="row" spacing={1} marginBottom={2}>
+        <StyledRelPostStack direction="row" spacing={1} marginBottom={2}>
           <PageHeader2 title="Related Posts" />
           <ColoredButton
             text="Connect to Game's Twitter"
@@ -205,7 +209,7 @@ const GameProfile = () => {
             borderStyle="solid"
             borderwidth="1px"
           />
-        </Stack>
+        </StyledRelPostStack>
 
         {gameDetails.relatedPosts.map((post, index) => (
           <GamePostCard key={index} post={post} />
