@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles"
 import { Container } from "@mui/material"
 import type { GameInfo } from "../../types"
 import { GameCard, GameModal } from "../../components"
+import { StyledContainerRow } from "./GamesDisplayRowStyles"
 
 const GameDisplayRow = ({
   row,
@@ -23,15 +24,6 @@ const GameDisplayRow = ({
     setRowHovered(false)
     setLocCardHovered(undefined)
   }
-
-  const StyledContainerRow = styled(Container)(() => {
-    return {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      alignContent: "space-around",
-    }
-  })
 
   return (
     <StyledContainerRow maxWidth="xl">
