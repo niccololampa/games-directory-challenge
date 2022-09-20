@@ -117,71 +117,80 @@ const GameProfile = () => {
           <GameProfileInfoBox label="Game Genre" values={gameDetails.genres} />
           <GameProfileInfoBox label="protcol" value={gameDetails.protocol} />
         </Stack>
-        <GameTrailerPlayer url={gameDetails.trailerLink} />
-        <GameDescText description={gameDetails.longDesc} fontSize="15px" />
 
-        <Stack direction="row" spacing={1} marginBottom={2}>
-          <ColoredButton
-            text="Like!"
-            handleClick={() => {
-              console.log("Liked Clicked")
-            }}
-            icon={Favorite}
-            width="fit-content"
-            backColor="#eeeea5"
-            backColorHover="#f7f7d4"
-            textColor="#000000"
-          />
+        <StyledContainer disableGutters maxWidth={false}>
+          <GameTrailerPlayer url={gameDetails.trailerLink} />
+        </StyledContainer>
 
-          <ColoredButton
-            text="Support"
-            handleClick={() => {
-              console.log("Support Clicked")
-            }}
-            icon={Support}
-            width="fit-content"
-            backColor="#eeeea5"
-            backColorHover="#f7f7d4"
-            textColor="#000000"
-          />
+        <StyledContainer disableGutters maxWidth={false}>
+          <GameDescText description={gameDetails.longDesc} fontSize="15px" />
+        </StyledContainer>
 
-          <ColoredButton
-            text="Team"
-            handleClick={() => {
-              console.log("Group Clicked")
-            }}
-            icon={Groups}
-            width="fit-content"
-            backColor="#eeeea5"
-            backColorHover="#f7f7d4"
-            textColor="#000000"
-          />
+        <StyledContainer disableGutters maxWidth={false}>
+          <Stack direction="row" spacing={1} marginBottom={2}>
+            <ColoredButton
+              text="Like!"
+              handleClick={() => {
+                console.log("Liked Clicked")
+              }}
+              icon={Favorite}
+              width="fit-content"
+              backColor="#eeeea5"
+              backColorHover="#f7f7d4"
+              textColor="#000000"
+            />
 
-          <ColoredButton
-            text="Roadmap"
-            handleClick={() => {
-              console.log("Road MapClicked")
-            }}
-            icon={MapIcon}
-            width="fit-content"
-            backColor="#eeeea5"
-            backColorHover="#f7f7d4"
-            textColor="#000000"
-          />
-        </Stack>
+            <ColoredButton
+              text="Support"
+              handleClick={() => {
+                console.log("Support Clicked")
+              }}
+              icon={Support}
+              width="fit-content"
+              backColor="#eeeea5"
+              backColorHover="#f7f7d4"
+              textColor="#000000"
+            />
 
-        <Stack direction="row" spacing={1} marginBottom={2}>
+            <ColoredButton
+              text="Team"
+              handleClick={() => {
+                console.log("Group Clicked")
+              }}
+              icon={Groups}
+              width="fit-content"
+              backColor="#eeeea5"
+              backColorHover="#f7f7d4"
+              textColor="#000000"
+            />
+
+            <ColoredButton
+              text="Roadmap"
+              handleClick={() => {
+                console.log("Road MapClicked")
+              }}
+              icon={MapIcon}
+              width="fit-content"
+              backColor="#eeeea5"
+              backColorHover="#f7f7d4"
+              textColor="#000000"
+            />
+          </Stack>
+        </StyledContainer>
+        <Stack direction="row" spacing={1} marginBottom={10}>
           <SocialShareButtons fillColor="#fff" size="large" />
         </Stack>
-        <PageHeader2 title="Latest Updates" />
-        <StyledUpdateBox>
-          <Stack direction="row" spacing={1} marginBottom={2}>
-            {gameUpdates(gameDetails.updates).map((update, index) => (
-              <GameUpdateCard key={index} update={update} />
-            ))}
-          </Stack>
-        </StyledUpdateBox>
 
+        <StyledContainer disableGutters maxWidth={false}>
+          <PageHeader2 title="Latest Updates" />
+          <StyledUpdateBox>
+            <Stack direction="row" spacing={1} marginBottom={2}>
+              {gameUpdates(gameDetails.updates).map((update, index) => (
+                <GameUpdateCard key={index} update={update} />
+              ))}
+            </Stack>
+          </StyledUpdateBox>
+        </StyledContainer>
         <StyledRelPostStack direction="row" spacing={1} marginBottom={2}>
           <PageHeader2 title="Related Posts" />
           <ColoredButton
