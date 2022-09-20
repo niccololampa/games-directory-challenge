@@ -59,12 +59,10 @@ const StyledCardActionArea = styled(CardActionArea)(
   },
 )
 
-const StyledCard = styled(Card)(
-  ({ color, colorHover }: { color: string; colorHover?: string }) => ({
-    borderRadius: 0,
-    boxShadow: "none",
-  }),
-)
+const StyledCard = styled(Card)(() => ({
+  borderRadius: 0,
+  boxShadow: "none",
+}))
 
 const StyledCardContent = styled(CardContent)(({ color = "#2e4857" }: { color?: string }) => ({
   backgroundColor: color,
@@ -126,8 +124,8 @@ const GameCard = ({
   const { gameName, image, live, shortDesc, genres, os, nfts, gif } = gameInfo
   const [cardHovered, setCardHovered] = useState(false)
   const [animation, setAnimation] = useState("")
-  const [cardMargin, setCardMargin] = useState<string>("10px 5px")
-  const [transition, setTransition] = useState<string>("")
+  const [cardMargin] = useState<string>("10px 5px")
+  const [transition] = useState<string>("")
 
   const handleMouseOver = () => {
     setCardHovered(true)
