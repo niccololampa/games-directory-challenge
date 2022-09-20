@@ -1,8 +1,6 @@
 import React, { useState } from "react"
-import { styled } from "@mui/material/styles"
-import { Container } from "@mui/material"
 import type { GameInfo } from "../../types"
-import { GameCard, GameModal } from "../../components"
+import { GameCard } from "../../components"
 import { StyledContainerRow } from "./GamesDisplayRowStyles"
 
 const GameDisplayRow = ({
