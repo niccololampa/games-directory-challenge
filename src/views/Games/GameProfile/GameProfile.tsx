@@ -20,7 +20,7 @@ import {
   GameUserLikes,
 } from "../../../components"
 import jsonData from "../../../sample-data.json"
-import type { GameInfo, GameFilter, GameUpdate } from "../../../types"
+import type { GameInfo, GameUpdate } from "../../../types"
 
 const data: GameInfo[] = jsonData as GameInfo[]
 
