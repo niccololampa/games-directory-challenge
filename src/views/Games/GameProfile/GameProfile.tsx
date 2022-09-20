@@ -186,7 +186,7 @@ const GameProfile = () => {
             }}
             width="fit-content"
             backColor="#000000"
-            backColorHover="#f7f7d4"
+            backColorHover="#1f1f1f"
             textColor="#ffffff"
             borderColor="#f7f7d4"
             borderStyle="solid"
@@ -199,7 +199,7 @@ const GameProfile = () => {
             }}
             width="fit-content"
             backColor="#000000"
-            backColorHover="#f7f7d4"
+            backColorHover="#1f1f1f"
             textColor="#ffffff"
             borderColor="#f7f7d4"
             borderStyle="solid"
