@@ -17,8 +17,10 @@ const GameDisplayRow = ({
   handleRowHover: () => void
   handleRowHoverOut: () => void
 }) => {
-  const [locCardHovered, setLocCardHovered] = useState<number | undefined>()
+  const colorHoverContent = "#476072"
+  const color = "#2e4857"
 
+  const [locCardHovered, setLocCardHovered] = useState<number | undefined>()
   const onHover = (index: number) => {
     handleRowHover()
     setLocCardHovered(index)
@@ -45,8 +47,8 @@ const GameDisplayRow = ({
         <GameCard
           key={index}
           gameInfo={game}
-          color="#2e4857"
-          colorHoverContent="#1e2c35"
+          color={color}
+          colorHoverContent={colorHoverContent}
           handleCardClick={() => handleCardClick(game)}
           width={256}
           onHover={() => onHover(index)}

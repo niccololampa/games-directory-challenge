@@ -38,12 +38,12 @@ export const StyledCardActionArea = styled(CardActionArea)(
       width,
       minWidth: "200px",
       "&:hover": {
-        transform: "scale(1.1)",
+        transform: "scale(1.15)",
         animation: `${popOutandIn} 1s ease`,
         margin: "10px 30px",
         transition: "margin 1s linear",
         outline: "none",
-        boxShadow: "0 0 30px  #a4d3f1",
+        boxShadow: "0 0 30px  #fdd987",
       },
     }
   },
@@ -84,7 +84,7 @@ export const StyledDescBox = styled(Box)({ height: "80%", overflow: "hidden" })
 
 export const StyledDescription = styled(Typography)({
   fontFamily: "Montserrat",
-  color: "#fff",
+  color: "#fdd987",
   opacity: 0.87,
   fontWeight: 500,
   fontSize: 14,
