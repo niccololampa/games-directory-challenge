@@ -40,6 +40,7 @@ const StyledCard = styled(Card)(() => {
     justifyContent: "center",
     color: "#ffffff",
     maxWidth: "345px",
+    minWidth: "fit-content",
     "&:hover": {
       transform: "scale(1.5)",
     },

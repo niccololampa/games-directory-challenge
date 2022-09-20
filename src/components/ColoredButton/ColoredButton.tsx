@@ -31,6 +31,7 @@ const StyledButton = styled(Button)(
     borderWidth: borderwidth,
     textTransform: "capitalize",
     width: width ? width : "100%",
+    minWidth: "fit-content",
     height: "40px",
     fontWeight: "bold",
     fontSize: "16px",

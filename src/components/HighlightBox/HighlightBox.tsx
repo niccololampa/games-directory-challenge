@@ -7,7 +7,7 @@ const StyledHighlightBox = styled(Box)(
     backgroundColor: status ? colorPos : colorNeg,
     borderRadius: "5%",
     height: "30px",
-    minWidth: "130px",
+    minWidth: "fit-content",
     padding: "8px 20px",
     display: "flex",
     justifyContent: "center",
