@@ -1,24 +1,6 @@
 import * as React from "react"
 import SearchIcon from "@mui/icons-material/Search"
-import { styled } from "@mui/material/styles"
-import TextField from "@mui/material/TextField"
-import InputAdornment from "@mui/material/InputAdornment"
-
-// FIXME:  these can be set up in themes page color
-const baseColor = "#768085"
-const highlightColor = "#eeeea5"
-
-const StyledTextField = styled(TextField)({
-  minWidth: 400,
-  "& .MuiInputBase-root": { color: baseColor },
-  "& .MuiOutlinedInput-notchedOutline": { borderColor: baseColor },
-  "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
-    borderColor: highlightColor,
-  },
-  "& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline": {
-    borderColor: highlightColor,
-  },
-})
+import { StyledTextField, StyledInputAdornment } from "./SearchBoxStyled"
 
 const SearchBox = ({
   value,
@@ -36,9 +18,9 @@ const SearchBox = ({
       placeholder="Search for a Game..."
       InputProps={{
         startAdornment: (
-          <InputAdornment position="start" sx={{ color: baseColor }}>
+          <StyledInputAdornment position="start">
             <SearchIcon />
-          </InputAdornment>
+          </StyledInputAdornment>
         ),
       }}
     />
