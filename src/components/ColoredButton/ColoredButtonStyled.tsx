@@ -4,28 +4,28 @@ import { Button, Typography } from "@mui/material/"
 export const StyledButton = styled(Button)(
   ({
     width,
-    backColor = "#eeeea5",
-    backColorHover = "#f7f7d4",
-    textColor = "#000000",
-    borderColor = "initial",
-    borderStyle = "none",
+    backcolor = "#eeeea5",
+    backcolorhover = "#f7f7d4",
+    textcolor = "#000000",
+    bordercolor = "initial",
+    borderstyle = "none",
     borderwidth = "initial",
   }: {
     width?: string | number
-    textColor: string
-    backColor: string
-    backColorHover: string
-    borderColor?: string
-    borderStyle?: string
+    textcolor: string
+    backcolor: string
+    backcolorhover: string
+    bordercolor?: string
+    borderstyle?: string
     borderwidth?: string
   }) => ({
-    backgroundColor: backColor,
+    backgroundColor: backcolor,
     "&:hover": {
-      backgroundColor: backColorHover,
+      backgroundColor: backcolorhover,
     },
-    color: textColor,
-    borderColor: borderColor,
-    borderStyle: borderStyle,
+    color: textcolor,
+    borderColor: bordercolor,
+    borderStyle: borderstyle,
     borderWidth: borderwidth,
     textTransform: "capitalize",
     width: width ? width : "100%",

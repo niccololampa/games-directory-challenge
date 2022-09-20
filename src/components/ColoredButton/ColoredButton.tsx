@@ -30,11 +30,11 @@ const ColoredButton = ({
       variant="contained"
       onClick={handleClick}
       width={width}
-      textColor={textColor}
-      backColor={backColor}
-      backColorHover={backColorHover}
-      borderColor={borderColor}
-      borderStyle={borderStyle}
+      textcolor={textColor}
+      backcolor={backColor}
+      backcolorhover={backColorHover}
+      bordercolor={borderColor}
+      borderstyle={borderStyle}
       borderwidth={borderwidth}
     >
       {icon && createElement(icon)}
