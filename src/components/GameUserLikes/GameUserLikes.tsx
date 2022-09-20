@@ -1,51 +1,9 @@
 import * as React from "react"
-import { styled } from "@mui/material/styles"
 import Typography from "@mui/material/Typography"
-import {
-  Card,
-  Container,
-  Stack,
-  CardMedia,
-  CardContent,
-  Button,
-  CardActionArea,
-  CardActions,
-} from "@mui/material"
+import { CardMedia, CardActionArea, CardActions } from "@mui/material"
 import type { GameUser } from "../../types"
+import { StyledContainerRow, StyledCardContent, StyledCard } from "./GameUserLikesStyled"
 
-const StyledContainerRow = styled(Container)(() => {
-  return {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "space-around",
-    marginTop: "20px",
-  }
-})
-
-const StyledCardContent = styled(CardContent)(() => {
-  return {
-    display: "flex",
-    background: "black",
-    justifyContent: "center",
-    color: "#ffffff",
-  }
-})
-
-const StyledCard = styled(Card)(() => {
-  return {
-    display: "flex",
-    margin: "10px",
-    background: "black",
-    justifyContent: "center",
-    color: "#ffffff",
-    maxWidth: "345px",
-    minWidth: "fit-content",
-    "&:hover": {
-      transform: "scale(1.5)",
-    },
-  }
-})
 const GameUserLikes = ({ users }: { users: GameUser[] }) => {
   return (
     <StyledContainerRow>
