@@ -4,17 +4,20 @@ import { Twitter, Facebook } from "@mui/icons-material"
 import IconButton from "@mui/material/IconButton"
 
 const SocialMediaLinks = () => {
+  /* FIXME: provide color through file */
+  const color = "#eeeea5"
+  const size = "large"
+
   return (
     <>
-      {/* FIXME: provide color through file */}
-      <IconButton size="large" color="inherit">
-        <Twitter sx={{ color: "#eeeea5" }} />
+      <IconButton size={size}>
+        <Twitter sx={{ color }} />
       </IconButton>
-      <IconButton size="large" color="inherit">
-        <Facebook sx={{ color: "#eeeea5" }} />
+      <IconButton size={size}>
+        <Facebook sx={{ color }} />
       </IconButton>
-      <IconButton size="large" color="inherit">
-        <DiscordLogo fill="#eeeea5" />
+      <IconButton size={size}>
+        <DiscordLogo fill={color} />
       </IconButton>
     </>
   )
