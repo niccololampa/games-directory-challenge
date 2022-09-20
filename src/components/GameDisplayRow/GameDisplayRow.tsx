@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import type { GameInfo } from "../../types"
 import { GameCard } from "../../components"
-import { StyledContainerRow } from "./GamesDisplayRowStyles"
+import { StyledContainerRow } from "./GamesDisplayRowStyled"
 
 const GameDisplayRow = ({
   row,

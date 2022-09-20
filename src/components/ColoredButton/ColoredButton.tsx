@@ -1,6 +1,6 @@
 import React, { createElement, useState } from "react"
 import { SvgIconComponent } from "@mui/icons-material"
-import { StyledButton, StyledButtonText } from "./ColoredButtonStyles"
+import { StyledButton, StyledButtonText } from "./ColoredButtonStyled"
 
 const ColoredButton = ({
   text,
