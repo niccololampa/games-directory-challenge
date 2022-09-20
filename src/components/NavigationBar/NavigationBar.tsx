@@ -1,5 +1,5 @@
 import React from "react"
-import { SocialMediaLinks, PageLinks, EarnAllianceLogo } from "../../components"
+import { SocialMediaLinks, PageLinks } from "../../components"
 import {
   AppBar,
   Box,

@@ -1,5 +1,5 @@
 import React from "react"
-import { MenuItem, FormControl } from "@mui/material"
+import { MenuItem } from "@mui/material"
 import Select, { SelectChangeEvent } from "@mui/material/Select"
 import { StyledFormControl } from "./SelectDropDownStyled"
 
