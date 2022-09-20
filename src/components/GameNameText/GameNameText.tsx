@@ -1,13 +1,5 @@
 import React from "react"
-import { styled } from "@mui/material/styles"
-import { Typography } from "@mui/material"
-
-const StyledGameName = styled(Typography)({
-  fontFamily: "Keania One",
-  fontSize: "20px",
-  fontWeight: "bold",
-  color: "#fff",
-})
+import { StyledGameName } from "./GameNameTextStyled"
 
 const GameNameText = ({ gameName }: { gameName: string }) => (
   <StyledGameName>{gameName}</StyledGameName>
