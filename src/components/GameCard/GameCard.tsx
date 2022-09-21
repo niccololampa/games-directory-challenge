@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { Fade } from "@mui/material"
 import {
   LiveGameInfoText,
   GameGenreText,
@@ -99,11 +100,11 @@ const GameCard = ({
               </StyledGenreContainer>
             )}
 
-            {cardHovered && (
+            <Fade in={cardHovered}>
               <StyledDescBox>
                 <StyledDescription>{shortDesc}</StyledDescription>
               </StyledDescBox>
-            )}
+            </Fade>
           </StyledCardContent>
         </StyledCard>
       </StyledCardActionArea>
