@@ -1,7 +1,6 @@
 import React from "react"
-import { SocialMediaLinks, PageLinks } from "../../components"
+import { SocialMediaLinks, PageLinks, EarnAllianceLogo } from "../../components"
 import {
-  AppBar,
   Box,
   Toolbar,
   IconButton,
@@ -15,7 +14,6 @@ import {
 import MenuIcon from "@mui/icons-material/Menu"
 import HRBorder from "../HRBorder/HRBorder"
 import "./NavigationBar.css"
-import earnAllianceLogo from "../../earn-alliance-logo.png"
 import {
   StyledAppBar,
   StyledLogoContainer,
@@ -50,17 +48,13 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
         <Container maxWidth={false}>
           <Toolbar disableGutters>
             <Box
-              component="img"
               sx={{
-                height: 84,
-                width: 150,
                 padding: 3,
                 display: { xs: "none", md: "flex" },
               }}
-              alt="Earn Allaince Logo"
-              src={earnAllianceLogo}
-            />
-
+            >
+              <EarnAllianceLogo width="150px" height="84px" />
+            </Box>
             <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
@@ -105,15 +99,12 @@ const NavigationBar = ({ pages }: { pages: string[] }) => {
               }}
             >
               <Box
-                component="img"
                 sx={{
-                  height: 84,
-                  width: 150,
                   padding: 3,
                 }}
-                alt="Earn Allaince Logo"
-                src={earnAllianceLogo}
-              />
+              >
+                <EarnAllianceLogo width="150px" height="84px" />
+              </Box>
             </StyledLogoContainer>
             <Box
               sx={{

@@ -1,16 +1,5 @@
 import { styled } from "@mui/material/styles"
-import {
-  AppBar,
-  Box,
-  Toolbar,
-  IconButton,
-  Typography,
-  Menu,
-  Container,
-  Avatar,
-  Tooltip,
-  MenuItem,
-} from "@mui/material"
+import { AppBar, IconButton, Menu, Container } from "@mui/material"
 
 export const StyledAppBar = styled(AppBar)({
   backgroundColor: "transparent",
