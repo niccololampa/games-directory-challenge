@@ -93,11 +93,13 @@ const GameCard = ({
             {!cardHovered && <LiveGameInfoText live={live ? true : false} />}
             <GameNameText gameName={gameName} />
             {!cardHovered && (
-              <StyledGenreContainer disableGutters>
-                {genres.map((genre, index) => (
-                  <GameGenreText key={index} genre={genre} />
-                ))}
-              </StyledGenreContainer>
+              <Fade in={!cardHovered}>
+                <StyledGenreContainer disableGutters>
+                  {genres.map((genre, index) => (
+                    <GameGenreText key={index} genre={genre} />
+                  ))}
+                </StyledGenreContainer>
+              </Fade>
             )}
 
             <Fade in={cardHovered}>
