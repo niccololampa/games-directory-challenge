@@ -1,3 +1,7 @@
+# Game Directory Page Challenge
+
+A Typescript React Draft App showing a directory of games. Uses MUI.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
