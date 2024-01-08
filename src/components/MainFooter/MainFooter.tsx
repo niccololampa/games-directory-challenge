@@ -25,7 +25,7 @@ const MainFooter = ({ pages }: { pages: string[] }) => {
         </StyledLinkBox>
       </StyledTopSectionContainer>
       <StyledBottomSectionContainer disableGutters maxWidth="xl">
-        <StyledCopyrightTypo>All Rights Reserved 2022 Earn Alliance</StyledCopyrightTypo>
+        <StyledCopyrightTypo>All Rights Reserved 2022</StyledCopyrightTypo>
         <PageLinks pages={footerPages} />
       </StyledBottomSectionContainer>
     </StyledFooterContainer>
