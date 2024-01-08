@@ -1,7 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import "./SwitchFilter.css"
 
-const SwitchFilter = ({ checked, handleCheck }: { checked: boolean; handleCheck: () => void }) => {
+const SwitchFilter = ({ handleCheck }: { checked: boolean; handleCheck: () => void }) => {
   return (
     <div>
       <label className="switch-filter">

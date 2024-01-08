@@ -15,7 +15,6 @@ import type { GameInfo, GameFilter } from "../../../types"
 const data: GameInfo[] = jsonData as GameInfo[]
 
 const GamesList = () => {
-  const pages = ["Games", "News", "Allies", "Badges", "WhitePaper"]
   const genres = ["Strategy", "Action", "FPS"]
 
   const [gameFilters, setGameFilters] = useState<GameFilter>({
