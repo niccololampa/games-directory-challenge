@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/games-directory-challenge/static/css/main.0df6a7ff.css",
+    "main.js": "/games-directory-challenge/static/js/main.41dbab9a.js",
+    "static/js/787.81dc8af7.chunk.js": "/games-directory-challenge/static/js/787.81dc8af7.chunk.js",
+    "static/media/earn-alliance-background.png": "/games-directory-challenge/static/media/earn-alliance-background.4653abfaccbf47e6aa68.png",
+    "static/media/earn-alliance-logo.png": "/games-directory-challenge/static/media/earn-alliance-logo.0301eccd4f12a40c37e4.png",
+    "static/media/discord.svg": "/games-directory-challenge/static/media/discord.60d351f68665a0cff6d915ba6a8a1eb5.svg",
+    "index.html": "/games-directory-challenge/index.html",
+    "static/media/telegram.svg": "/games-directory-challenge/static/media/telegram.096eb79c854ca6b40cff22980eafb2d5.svg",
+    "static/media/medium.svg": "/games-directory-challenge/static/media/medium.92786dd45f75b21be1bd5079dece55fa.svg",
+    "main.0df6a7ff.css.map": "/games-directory-challenge/static/css/main.0df6a7ff.css.map",
+    "main.41dbab9a.js.map": "/games-directory-challenge/static/js/main.41dbab9a.js.map",
+    "787.81dc8af7.chunk.js.map": "/games-directory-challenge/static/js/787.81dc8af7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0df6a7ff.css",
+    "static/js/main.41dbab9a.js"
+  ]
+}
