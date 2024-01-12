@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react"
-import { SelectChangeEvent } from "@mui/material/Select"
+import React from "react"
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom"
 import { Games } from "./views"
 import { NavigationBar, MainFooter } from "./components"
