@@ -84,7 +84,10 @@ const GameCard = ({
             <GameOSInfo os={os} size={20} color="#fff" />
             {nfts && <NFTSDisplay />}
             {!cardHovered ? (
-              <StyledCardMedia image={image} src="img" />
+              <StyledCardMedia
+                image={`${process.env.REACT_APP_BASE_URL ?? ""}${image}`}
+                src="img"
+              />
             ) : (
               <StyledCardMedia image={gif ? gif : image} src="img" />
             )}

@@ -12,8 +12,7 @@ function App() {
       <BrowserRouter>
         <NavigationBar pages={pages} />
         <Routes>
-          <Route path="/games/*" element={<Games />} />
-          <Route path="*" element={<Navigate to="/games" replace />} />
+          <Route path={`${process.env.REACT_APP_BASE_URL}/*`} element={<Games />} />
         </Routes>
         <MainFooter pages={pages} />
       </BrowserRouter>
